@@ -11,9 +11,9 @@
 
   (page A4)
   (title_block
-    (title chroma_luma_invert)
-    (date 2020-06-13)
-    (company "circuit designed by Rob Schafer")
+    (title converge_proto)
+    (company "cyberboy666 & user43368831")
+    (comment 1 "by tim caldwell")
   )
 
   (layers

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name lib_fp)(type KiCad)(uri /Users/timcaldwell/personal/robs-whiteboard-funhouse-companion-circuits/lib_fp.pretty)(options "")(descr ""))
+)

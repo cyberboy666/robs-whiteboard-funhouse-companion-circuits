@@ -27,6 +27,31 @@ X V+ 8 -100 300 150 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
+# Connector_Barrel_Jack_Switch
+#
+DEF Connector_Barrel_Jack_Switch J 0 20 Y N 1 F N
+F0 "J" 0 210 50 H V C CNN
+F1 "Connector_Barrel_Jack_Switch" 0 -200 50 H V C CNN
+F2 "" 50 -40 50 H I C CNN
+F3 "" 50 -40 50 H I C CNN
+$FPLIST
+ BarrelJack*
+$ENDFPLIST
+DRAW
+A -130 100 25 901 -901 0 1 10 F -130 125 -130 75
+A -130 100 25 901 -901 0 1 10 N -130 125 -130 75
+S -200 150 200 -150 0 1 10 f
+S 145 125 -130 75 0 1 10 F
+P 2 0 1 10 50 -90 75 -65 N
+P 2 0 1 10 200 100 150 100 N
+P 4 0 1 10 200 0 50 0 50 -90 25 -65 N
+P 6 0 1 10 -150 -100 -100 -100 -50 -50 0 -100 100 -100 200 -100 N
+X ~ 1 300 100 100 L 50 50 1 1 P
+X ~ 2 300 -100 100 L 50 50 1 1 P
+X ~ 3 300 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Connector_Conn_Coaxial
 #
 DEF Connector_Conn_Coaxial J 0 40 Y N 1 F N
@@ -129,15 +154,20 @@ X 3 3 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Regulator_Linear_LM317L_TO92
+# Regulator_Linear_LM317_3PinPackage
 #
-DEF Regulator_Linear_LM317L_TO92 U 0 10 Y Y 1 F N
+DEF Regulator_Linear_LM317_3PinPackage U 0 10 Y Y 1 F N
 F0 "U" -150 125 50 H V C CNN
-F1 "Regulator_Linear_LM317L_TO92" 0 125 50 H V L CNN
-F2 "Package_TO_SOT_THT:TO-92_Inline" 0 225 50 H I C CIN
+F1 "Regulator_Linear_LM317_3PinPackage" 0 125 50 H V L CNN
+F2 "" 0 250 50 H I C CIN
 F3 "" 0 0 50 H I C CNN
+ALIAS AZ1117-ADJ
 $FPLIST
- TO?92*
+ SOT?223*
+ SOT?89*
+ TO?220*
+ TO?252*
+ TO?263*
 $ENDFPLIST
 DRAW
 S -200 75 200 -200 0 1 10 f
@@ -194,6 +224,19 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_PWR_FLAG
+#
+DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "power_PWR_FLAG" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #
