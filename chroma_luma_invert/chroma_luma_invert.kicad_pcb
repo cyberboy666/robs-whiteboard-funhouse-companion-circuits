@@ -40,7 +40,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.25)
     (user_trace_width 0.5)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
@@ -2957,8 +2957,6 @@
   (segment (start 145.250001 80.929999) (end 151.1 75.08) (width 0.5) (layer B.Cu) (net 15) (status 20))
   (segment (start 141.5 87.506002) (end 145.250001 83.756001) (width 0.5) (layer B.Cu) (net 15))
   (segment (start 134.5 95.75) (end 134.5 95.5) (width 0.5) (layer B.Cu) (net 15))
-  (segment (start 201.5 60.4) (end 196.5 65.4) (width 0.25) (layer F.Cu) (net 74) (status 20))
-  (segment (start 201.5 59.25) (end 201.5 60.4) (width 0.25) (layer F.Cu) (net 74) (status 10))
   (segment (start 155 50.28) (end 158.72 54) (width 0.5) (layer B.Cu) (net 16) (status 20))
   (segment (start 155 45) (end 155 50.28) (width 0.5) (layer B.Cu) (net 16) (status 10))
   (segment (start 160.82 54) (end 159.12 54) (width 0.5) (layer B.Cu) (net 16) (status 20))
@@ -3331,6 +3329,8 @@
   (segment (start 158.66 106.28) (end 158.66 105.88) (width 0.25) (layer F.Cu) (net 60) (status 30))
   (segment (start 156.44 108.5) (end 158.66 106.28) (width 0.25) (layer F.Cu) (net 60) (status 20))
   (segment (start 142.954998 108.5) (end 156.44 108.5) (width 0.25) (layer F.Cu) (net 60))
+  (segment (start 201.5 60.4) (end 196.5 65.4) (width 0.25) (layer F.Cu) (net 74) (status 20))
+  (segment (start 201.5 59.25) (end 201.5 60.4) (width 0.25) (layer F.Cu) (net 74) (status 10))
 
   (zone (net 7) (net_name GND) (layer F.Cu) (tstamp 5EE58D39) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
