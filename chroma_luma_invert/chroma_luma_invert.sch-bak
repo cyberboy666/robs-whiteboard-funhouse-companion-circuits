@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Conn_Coaxial J2
+L Connector:Conn_Coaxial J1
 U 1 1 5EBB219E
 P 1275 1550
-F 0 "J2" H 1203 1788 50  0000 C CNN
+F 0 "J1" H 1203 1788 50  0000 C CNN
 F 1 "rca" H 1203 1697 50  0000 C CNN
 F 2 "lib_fp:RCJ-024" H 1275 1550 50  0001 C CNN
 F 3 " ~" H 1275 1550 50  0001 C CNN
@@ -118,12 +118,12 @@ $EndComp
 Wire Wire Line
 	2425 1600 2425 1550
 $Comp
-L Amplifier_Operational:ADA4807-2ARM U1
+L Amplifier_Operational:ADA4807-4 U1
 U 1 1 5EBBB1FA
 P 3400 1650
 F 0 "U1" H 3400 2017 50  0000 C CNN
-F 1 "AD8042" H 3400 1926 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 3400 1650 50  0001 C CNN
+F 1 "AD8044" H 3400 1926 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 3400 1650 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 3400 1650 50  0001 C CNN
 	1    3400 1650
 	1    0    0    -1  
@@ -175,14 +175,14 @@ Wire Wire Line
 Wire Wire Line
 	3100 2450 3100 2600
 $Comp
-L Amplifier_Operational:ADA4807-2ARM U2
-U 2 1 5EBD1190
+L Amplifier_Operational:ADA4807-4 U1
+U 4 1 5EBD1190
 P 5600 3475
-F 0 "U2" H 5600 3108 50  0000 C CNN
-F 1 "AD8042" H 5600 3199 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 5600 3475 50  0001 C CNN
+F 0 "U1" H 5600 3108 50  0000 C CNN
+F 1 "AD8044" H 5600 3199 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 5600 3475 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 5600 3475 50  0001 C CNN
-	2    5600 3475
+	4    5600 3475
 	1    0    0    1   
 $EndComp
 $Comp
@@ -322,14 +322,14 @@ F 3 "~" H 5550 1375 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Amplifier_Operational:ADA4807-2ARM U2
-U 1 1 5EBC7462
+L Amplifier_Operational:ADA4807-4 U1
+U 2 1 5EBC7462
 P 5625 1750
-F 0 "U2" H 5675 1500 50  0000 C CNN
-F 1 "AD8042" H 5675 1575 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 5625 1750 50  0001 C CNN
+F 0 "U1" H 5675 1500 50  0000 C CNN
+F 1 "AD8044" H 5675 1575 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 5625 1750 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 5625 1750 50  0001 C CNN
-	1    5625 1750
+	2    5625 1750
 	1    0    0    1   
 $EndComp
 Wire Notes Line
@@ -441,14 +441,14 @@ Connection ~ 8150 2775
 Text Notes 7675 650  0    79   ~ 0
 switcher
 $Comp
-L Amplifier_Operational:ADA4807-2ARM U1
-U 2 1 5EC1C2E9
+L Amplifier_Operational:ADA4807-4 U1
+U 3 1 5EC1C2E9
 P 9375 1325
 F 0 "U1" H 9375 1692 50  0000 C CNN
-F 1 "AD8042" H 9375 1601 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 9375 1325 50  0001 C CNN
+F 1 "AD8044" H 9375 1601 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 9375 1325 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 9375 1325 50  0001 C CNN
-	2    9375 1325
+	3    9375 1325
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -489,10 +489,10 @@ Wire Wire Line
 	9675 1325 9775 1325
 Connection ~ 9675 1325
 $Comp
-L Connector:Conn_Coaxial J1
+L Connector:Conn_Coaxial J2
 U 1 1 5EC28FE8
 P 10375 1325
-F 0 "J1" H 10475 1300 50  0000 L CNN
+F 0 "J2" H 10475 1300 50  0000 L CNN
 F 1 "rca" H 10475 1209 50  0000 L CNN
 F 2 "lib_fp:RCJ-024" H 10375 1325 50  0001 C CNN
 F 3 " ~" H 10375 1325 50  0001 C CNN
@@ -831,26 +831,15 @@ Connection ~ 1375 4025
 Wire Wire Line
 	1375 4025 1375 4225
 $Comp
-L Amplifier_Operational:ADA4807-2ARM U1
-U 3 1 5EECCE6A
+L Amplifier_Operational:ADA4807-4 U1
+U 5 1 5EECCE6A
 P 1175 5325
 F 0 "U1" H 1175 5600 50  0000 C CNN
-F 1 "AD8042" H 1250 5525 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 1175 5325 50  0001 C CNN
+F 1 "AD8044" H 1250 5525 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 1175 5325 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 1175 5325 50  0001 C CNN
-	3    1175 5325
+	5    1175 5325
 	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:ADA4807-2ARM U2
-U 3 1 5EED0088
-P 1600 5325
-F 0 "U2" H 1325 5600 50  0000 C CNN
-F 1 "AD8042" H 1250 5525 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 1600 5325 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 1600 5325 50  0001 C CNN
-	3    1600 5325
-	-1   0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0101
@@ -864,17 +853,6 @@ F 3 "" H 1075 5025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0102
-U 1 1 5EED48FC
-P 1700 5025
-F 0 "#PWR0102" H 1700 4875 50  0001 C CNN
-F 1 "+5V" H 1715 5198 50  0000 C CNN
-F 2 "" H 1700 5025 50  0001 C CNN
-F 3 "" H 1700 5025 50  0001 C CNN
-	1    1700 5025
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0103
 U 1 1 5EED4E41
 P 1075 5625
@@ -883,17 +861,6 @@ F 1 "GND" H 1080 5452 50  0000 C CNN
 F 2 "" H 1075 5625 50  0001 C CNN
 F 3 "" H 1075 5625 50  0001 C CNN
 	1    1075 5625
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0104
-U 1 1 5EED534C
-P 1700 5625
-F 0 "#PWR0104" H 1700 5375 50  0001 C CNN
-F 1 "GND" H 1705 5452 50  0000 C CNN
-F 2 "" H 1700 5625 50  0001 C CNN
-F 3 "" H 1700 5625 50  0001 C CNN
-	1    1700 5625
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
