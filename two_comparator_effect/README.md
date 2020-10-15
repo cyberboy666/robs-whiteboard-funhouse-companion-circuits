@@ -27,6 +27,7 @@ Qty | Reference(s) | Value
 # build instructions:
 
 what you need:
+
 - soldering iron
 - solder
 - tin/sponge
@@ -36,9 +37,11 @@ what you need:
 - 5v barrel plug powersupply (either to wall or to usb)
 
 maybe useful: 
+
 - solder braid/pump
 - multi meter
 
+## building
 
 - note on soldering: try to remember to heat pad first (2-3seconds), then add solder, then continue to heat (1-2seconds)
 
@@ -51,6 +54,8 @@ maybe useful:
 - now lets do the ic socket -> _make sure the direction is correct!_ place in and fold two corner legs to hold in place, then solder all legs. you can place the ic in now too
 
 - finally lets place the control parts, starting with the power jack (can use something under teh board to balance it while you solder), next place the rca jacks and pots. be generous with the solder here -> this is to strengthen the mechanical connections aswell as making electrical ones
+
+## testing
 
 and the circuit is done ! check for any solder bridges or unsoldered joins - use a multimeter to be sure if you have one. time to test. best to start by setting up your cvbs video source and plugging directly into the cvbs video display -> is this giving the expected image ?
 
