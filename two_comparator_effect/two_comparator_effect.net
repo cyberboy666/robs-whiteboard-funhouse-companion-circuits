@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/timcaldwell/personal/robs-whiteboard-funhouse-companion-circuits/two_comparator_effect/two_comparator_effect.sch)
-    (date "2020 July 31, Friday 11:57:53")
+    (date "2020 November 02, Monday 18:20:55")
     (tool "Eeschema (5.1.4-0-10_14)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -17,7 +17,7 @@
   (components
     (comp (ref U2)
       (value LM317)
-      (footprint Package_TO_SOT_THT:TO-92_Inline)
+      (footprint Package_TO_SOT_THT:TO-92_HandSolder)
       (datasheet http://www.ti.com/lit/ds/snvs775k/snvs775k.pdf)
       (libsource (lib Regulator_Linear) (part LM317_3PinPackage) (description "1A 35V Adjustable Linear Regulator, SOT-89/SOT-223/TO-220/TO-252/TO-263"))
       (sheetpath (names /) (tstamps /))
@@ -122,7 +122,7 @@
       (tstamp 5EB9CF10))
     (comp (ref Q1)
       (value 2N3904)
-      (footprint Package_TO_SOT_THT:TO-92_Inline)
+      (footprint Package_TO_SOT_THT:TO-92_HandSolder)
       (datasheet https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf)
       (libsource (lib Transistor_BJT) (part 2N3904) (description "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"))
       (sheetpath (names /) (tstamps /))

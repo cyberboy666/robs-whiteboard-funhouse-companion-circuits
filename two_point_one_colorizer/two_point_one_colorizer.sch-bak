@@ -8,8 +8,8 @@ Sheet 1 4
 Title "two point one colorizer"
 Date "2020-07-30"
 Rev ""
-Comp "designed by rob schafer"
-Comment1 "converted to kicad by cyberboy666"
+Comp "original design by rob schafer"
+Comment1 "modified and converted to kicad by cyberboy666"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -65,7 +65,7 @@ L Device:R R7
 U 1 1 5F104F08
 P 2075 4250
 F 0 "R7" H 2145 4296 50  0000 L CNN
-F 1 "1M" H 2145 4205 50  0000 L CNN
+F 1 "1m" H 2145 4205 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2005 4250 50  0001 C CNN
 F 3 "~" H 2075 4250 50  0001 C CNN
 	1    2075 4250
@@ -532,7 +532,7 @@ L Device:R R2
 U 1 1 5F22BD58
 P 1775 1825
 F 0 "R2" H 1845 1871 50  0000 L CNN
-F 1 "5k" H 1845 1780 50  0000 L CNN
+F 1 "5.1k" H 1845 1780 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1705 1825 50  0001 C CNN
 F 3 "~" H 1775 1825 50  0001 C CNN
 	1    1775 1825
@@ -987,4 +987,29 @@ $EndComp
 Connection ~ 1375 7200
 Wire Wire Line
 	1375 7200 1375 7350
+$Comp
+L Device:C C20
+U 1 1 5F2FC2DD
+P 6600 7150
+F 0 "C20" H 6715 7196 50  0000 L CNN
+F 1 "0.1u" H 6715 7105 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 6638 7000 50  0001 C CNN
+F 3 "~" H 6600 7150 50  0001 C CNN
+	1    6600 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR078
+U 1 1 5F2FCB9A
+P 6600 7300
+F 0 "#PWR078" H 6600 7050 50  0001 C CNN
+F 1 "GND" H 6605 7127 50  0000 C CNN
+F 2 "" H 6600 7300 50  0001 C CNN
+F 3 "" H 6600 7300 50  0001 C CNN
+	1    6600 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6225 7000 6600 7000
+Connection ~ 6225 7000
 $EndSCHEMATC

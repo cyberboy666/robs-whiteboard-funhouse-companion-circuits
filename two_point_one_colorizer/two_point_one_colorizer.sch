@@ -8,8 +8,8 @@ Sheet 1 4
 Title "two point one colorizer"
 Date "2020-07-30"
 Rev ""
-Comp "designed by rob schafer"
-Comment1 "converted to kicad by cyberboy666"
+Comp "original design by rob schafer"
+Comment1 "modified and converted to kicad by cyberboy666"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -65,7 +65,7 @@ L Device:R R7
 U 1 1 5F104F08
 P 2075 4250
 F 0 "R7" H 2145 4296 50  0000 L CNN
-F 1 "1M" H 2145 4205 50  0000 L CNN
+F 1 "1m" H 2145 4205 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2005 4250 50  0001 C CNN
 F 3 "~" H 2075 4250 50  0001 C CNN
 	1    2075 4250
@@ -532,7 +532,7 @@ L Device:R R2
 U 1 1 5F22BD58
 P 1775 1825
 F 0 "R2" H 1845 1871 50  0000 L CNN
-F 1 "5k" H 1845 1780 50  0000 L CNN
+F 1 "5.1k" H 1845 1780 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1705 1825 50  0001 C CNN
 F 3 "~" H 1775 1825 50  0001 C CNN
 	1    1775 1825

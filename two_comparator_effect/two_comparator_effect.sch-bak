@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Regulator_Linear:LM317_3PinPackage U4
+L Regulator_Linear:LM317_3PinPackage U2
 U 1 1 5EB5729E
 P 2200 5750
-F 0 "U4" H 2200 5992 50  0000 C CNN
+F 0 "U2" H 2200 5992 50  0000 C CNN
 F 1 "LM317" H 2200 5901 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2200 5975 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/snvs775k/snvs775k.pdf" H 2200 5750 50  0001 C CNN
@@ -688,56 +688,56 @@ Wire Wire Line
 Text Notes 1725 5325 0    50   ~ 0
 POWER_SUPPLY
 $Comp
-L Comparator:LM339 U?
+L Comparator:LM339 U1
 U 1 1 5F34098F
 P 5625 1550
-F 0 "U?" H 5625 1917 50  0000 C CNN
+F 0 "U1" H 5625 1917 50  0000 C CNN
 F 1 "LM339" H 5625 1826 50  0000 C CNN
-F 2 "" H 5575 1650 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 5575 1650 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 5675 1750 50  0001 C CNN
 	1    5625 1550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM339 U?
+L Comparator:LM339 U1
 U 2 1 5F34C782
 P 5625 2850
-F 0 "U?" H 5625 3217 50  0000 C CNN
+F 0 "U1" H 5625 3217 50  0000 C CNN
 F 1 "LM339" H 5625 3126 50  0000 C CNN
-F 2 "" H 5575 2950 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 5575 2950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 5675 3050 50  0001 C CNN
 	2    5625 2850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM339 U?
+L Comparator:LM339 U1
 U 3 1 5F34D944
 P 5650 5275
-F 0 "U?" H 5650 5642 50  0000 C CNN
+F 0 "U1" H 5650 5642 50  0000 C CNN
 F 1 "LM339" H 5650 5551 50  0000 C CNN
-F 2 "" H 5600 5375 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 5600 5375 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 5700 5475 50  0001 C CNN
 	3    5650 5275
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM339 U?
+L Comparator:LM339 U1
 U 4 1 5F350511
 P 6200 7175
-F 0 "U?" H 6200 7542 50  0000 C CNN
+F 0 "U1" H 6200 7542 50  0000 C CNN
 F 1 "LM339" H 6200 7451 50  0000 C CNN
-F 2 "" H 6150 7275 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 6150 7275 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 6250 7375 50  0001 C CNN
 	4    6200 7175
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM339 U?
+L Comparator:LM339 U1
 U 5 1 5F3519B7
 P 5325 7150
-F 0 "U?" H 5283 7196 50  0000 L CNN
+F 0 "U1" H 5283 7196 50  0000 L CNN
 F 1 "LM339" H 5283 7105 50  0000 L CNN
-F 2 "" H 5275 7250 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 5275 7250 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 5375 7350 50  0001 C CNN
 	5    5325 7150
 	1    0    0    -1  
@@ -746,10 +746,10 @@ NoConn ~ 5900 7075
 NoConn ~ 5900 7275
 NoConn ~ 6500 7175
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR03
 U 1 1 5F355F1F
 P 5225 6850
-F 0 "#PWR?" H 5225 6700 50  0001 C CNN
+F 0 "#PWR03" H 5225 6700 50  0001 C CNN
 F 1 "+5V" H 5240 7023 50  0000 C CNN
 F 2 "" H 5225 6850 50  0001 C CNN
 F 3 "" H 5225 6850 50  0001 C CNN
@@ -757,14 +757,43 @@ F 3 "" H 5225 6850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR04
 U 1 1 5F3567DE
 P 5225 7450
-F 0 "#PWR?" H 5225 7200 50  0001 C CNN
+F 0 "#PWR04" H 5225 7200 50  0001 C CNN
 F 1 "GND" H 5230 7277 50  0000 C CNN
 F 2 "" H 5225 7450 50  0001 C CNN
 F 3 "" H 5225 7450 50  0001 C CNN
 	1    5225 7450
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C C4
+U 1 1 5F35840A
+P 4875 7175
+F 0 "C4" H 4650 7250 50  0000 C CNN
+F 1 "0.1u" H 4650 7150 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 4913 7025 50  0001 C CNN
+F 3 "~" H 4875 7175 50  0001 C CNN
+	1    4875 7175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5225 6850 4875 6850
+Wire Wire Line
+	4875 6850 4875 7025
+Connection ~ 5225 6850
+$Comp
+L power:GND #PWR08
+U 1 1 5F35BEFF
+P 4875 7450
+F 0 "#PWR08" H 4875 7200 50  0001 C CNN
+F 1 "GND" H 4880 7277 50  0000 C CNN
+F 2 "" H 4875 7450 50  0001 C CNN
+F 3 "" H 4875 7450 50  0001 C CNN
+	1    4875 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4875 7325 4875 7450
 $EndSCHEMATC

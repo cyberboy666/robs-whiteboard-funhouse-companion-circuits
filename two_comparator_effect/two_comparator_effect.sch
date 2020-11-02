@@ -20,7 +20,7 @@ U 1 1 5EB5729E
 P 2200 5750
 F 0 "U2" H 2200 5992 50  0000 C CNN
 F 1 "LM317" H 2200 5901 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2200 5975 50  0001 C CIN
+F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 2200 5975 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/snvs775k/snvs775k.pdf" H 2200 5750 50  0001 C CNN
 	1    2200 5750
 	1    0    0    -1  
@@ -363,7 +363,7 @@ U 1 1 5EB9F092
 P 7625 4100
 F 0 "Q1" H 7815 4146 50  0000 L CNN
 F 1 "2N3904" H 7815 4055 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7825 4025 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 7825 4025 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 7625 4100 50  0001 L CNN
 	1    7625 4100
 	1    0    0    -1  
