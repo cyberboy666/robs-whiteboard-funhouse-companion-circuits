@@ -1,6 +1,8 @@
 
 # v0.2 bom:
 
+## [interactive bom](https://htmlpreview.github.io/?https://github.com/langolierz/robs-whiteboard-funhouse-companion-circuits/blob/master/two_comparator_effect/bom/ibom.html)
+
 Qty | Reference(s) | Value
 --- | --- | ---
 3 | C1, C2, C3 | 1u
