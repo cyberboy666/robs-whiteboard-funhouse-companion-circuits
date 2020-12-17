@@ -94,7 +94,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "two_comparator_effect_v0_2/"))
+      (outputdirectory "two_comparator_effect_v0_2_1/"))
   )
 
   (net 0 "")
@@ -2614,7 +2614,7 @@
   (segment (start 130.84 69.88) (end 124.4 63.44) (width 0.25) (layer F.Cu) (net 18))
   (segment (start 130.84 70.28) (end 130.84 69.88) (width 0.25) (layer F.Cu) (net 18))
 
-  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 5F3455B7) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 5FA0B712) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -3127,7 +3127,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5F3455B4) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5FA0B70F) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
