@@ -1,5 +1,33 @@
 
+# two_comparator_effect
+
+![image](https://user-images.githubusercontent.com/12017938/99150392-944cab80-2694-11eb-8207-11434fbdeb30.png)
+
+
+## lessons
+
+this circuit is based on one described by Rob Schafer in:
+
+- [Lesson 1 - Comparators](https://www.youtube.com/watch?v=ml8xnRFdcHY)
+- [Lesson 2 - Clamping](https://www.youtube.com/watch?v=FymrxKLHy6c)
+
+also see: [original schematic](https://www.youtube.com/watch?v=MSNrXUDO9DE) and [clamping scope example](https://www.youtube.com/watch?v=vQ15EZKisZ8)
+
+![image](https://user-images.githubusercontent.com/12017938/99150365-610a1c80-2694-11eb-8e93-e68758f4fa7a.png)
+
+## adaption
+
+see this [scanlines thread](https://scanlines.xyz/t/whiteboard-schoolhouse-companion-circuits/127) for discussion on this project
+
+video demos from this adaption:
+
+- [2comparatorFx+recurboy](https://videos.scanlines.xyz/videos/watch/49ce42f5-12a4-4f6e-85ff-bbef453d9e1e)
+- [2comparatorFx+recurboy_p2](https://videos.scanlines.xyz/videos/watch/e029e6a6-3494-4a65-8555-49e3c94d06a6)
+
+
 # v0.2 bom:
+
+## [interactive bom](https://htmlpreview.github.io/?https://github.com/langolierz/robs-whiteboard-funhouse-companion-circuits/blob/master/two_comparator_effect/bom/ibom.html)
 
 Qty | Reference(s) | Value
 --- | --- | ---
