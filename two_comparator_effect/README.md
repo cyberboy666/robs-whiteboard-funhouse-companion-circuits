@@ -29,28 +29,29 @@ video demos from this adaption:
 
 ## [interactive bom](https://htmlpreview.github.io/?https://github.com/langolierz/robs-whiteboard-funhouse-companion-circuits/blob/master/two_comparator_effect/bom/ibom.html)
 
-Qty | Reference(s) | Value
---- | --- | ---
-3 | C1, C2, C3 | 1u
-1 | C4 | 0.1u
-1 | D1 | 1n914
-2 | J1, J2 | RCA
-1 | J3 | Barrel_Jack
-1 | Q1 | 2N3904
-2 | R1, R5 | 4.7k
-2 | R2, R15 | 1k
-3 | R3, R4, R7 | 1.2k
-1 | R6 | 680
-2 | R8, R10 | 75
-1 | R9 | 150k
-1 | R11 | 47
-1 | R12 | 470
-1 | R13 | 180
-1 | R14 | 1.5k
-1 | R16 | 100
-2 | RV1, RV2 | 1k
-1 | U1 | LM339
-1 | U2 | LM317
+Qty | Reference(s) | Value | tayda | mouser
+--- | --- | --- | --- | ---
+3 | C1, C2, C3 | 1u | A-321 | -
+1 | C4 | 0.1u | A-214 | -
+1 | D1 | 1n914 | A-615 | -
+2 | J1, J2 | RCA | - | 490-RCJ-024
+1 | J3 | Barrel_Jack | A-4118 | -
+1 | Q1 | 2N3904 | A-111 | -
+2 | R1, R5 | 4.7k | A-2310 | -
+2 | R2, R15 | 1k | A-2200 | -
+3 | R3, R4, R7 | 1.2k | A-2201 | -
+1 | R6 | 680 | A-2281 | -
+2 | R8, R10 | 75 | A-2193 | -
+1 | R9 | 150k | A-2210 | -
+1 | R11 | 47 | A-2190 | -
+1 | R12 | 470 | A-2247 | -
+1 | R13 | 180 | A-2278 | -
+1 | R14 | 1.5k | A-2202 | -
+1 | R16 | 100 | A-2245 | -
+2 | RV1, RV2 | 1k | - | 652-PTV09A-4225FB102
+1 | U1 | LM339 | A-022 | -
+1 | U2 | LM317 | A-500 | -
+1 | - | 14pin socket | A-004 | -
 
 # build instructions:
 
