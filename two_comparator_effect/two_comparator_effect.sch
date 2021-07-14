@@ -75,17 +75,6 @@ Wire Wire Line
 	3100 6400 2550 6400
 Connection ~ 2550 6400
 $Comp
-L Connector:Conn_Coaxial J1
-U 1 1 5EB59891
-P 2350 4050
-F 0 "J1" H 2278 4288 50  0000 C CNN
-F 1 "RCA" H 2278 4197 50  0000 C CNN
-F 2 "lib_fp:RCJ-024" H 2350 4050 50  0001 C CNN
-F 3 " ~" H 2350 4050 50  0001 C CNN
-	1    2350 4050
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR013
 U 1 1 5EB5A54D
 P 2350 4450
@@ -209,7 +198,7 @@ L Device:R_POT RV2
 U 1 1 5EB71961
 P 4300 2950
 F 0 "RV2" H 4230 2996 50  0000 R CNN
-F 1 "1k" H 4230 2905 50  0000 R CNN
+F 1 "1k_pot" H 4230 2905 50  0000 R CNN
 F 2 "lib_fp:Potentiometer_Vertical_Large" H 4300 2950 50  0001 C CNN
 F 3 "~" H 4300 2950 50  0001 C CNN
 	1    4300 2950
@@ -458,8 +447,8 @@ L Connector:Conn_Coaxial J2
 U 1 1 5EBAE02B
 P 8900 4350
 F 0 "J2" H 9000 4325 50  0000 L CNN
-F 1 "RCA" H 9000 4234 50  0000 L CNN
-F 2 "lib_fp:RCJ-024" H 8900 4350 50  0001 C CNN
+F 1 "rca" H 9000 4234 50  0000 L CNN
+F 2 "lib_fp:tht_rca_vertical" H 8900 4350 50  0001 C CNN
 F 3 " ~" H 8900 4350 50  0001 C CNN
 	1    8900 4350
 	1    0    0    -1  
@@ -512,7 +501,7 @@ L Device:R_POT RV1
 U 1 1 5EE779AE
 P 3500 1650
 F 0 "RV1" H 3430 1696 50  0000 R CNN
-F 1 "1k" H 3430 1605 50  0000 R CNN
+F 1 "1k_pot" H 3430 1605 50  0000 R CNN
 F 2 "lib_fp:Potentiometer_Vertical_Large" H 3500 1650 50  0001 C CNN
 F 3 "~" H 3500 1650 50  0001 C CNN
 	1    3500 1650
@@ -796,4 +785,15 @@ Wire Wire Line
 	4875 7325 4875 7450
 Wire Wire Line
 	7725 4350 7725 4475
+$Comp
+L Connector:Conn_Coaxial J1
+U 1 1 5EB59891
+P 2350 4050
+F 0 "J1" H 2278 4288 50  0000 C CNN
+F 1 "rca" H 2278 4197 50  0000 C CNN
+F 2 "lib_fp:tht_rca_vertical" H 2350 4050 50  0001 C CNN
+F 3 " ~" H 2350 4050 50  0001 C CNN
+	1    2350 4050
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

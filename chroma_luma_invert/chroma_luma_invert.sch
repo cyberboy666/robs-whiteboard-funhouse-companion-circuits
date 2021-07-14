@@ -20,7 +20,7 @@ U 1 1 5EBB219E
 P 1275 1550
 F 0 "J1" H 1203 1788 50  0000 C CNN
 F 1 "rca" H 1203 1697 50  0000 C CNN
-F 2 "lib_fp:RCJ-024" H 1275 1550 50  0001 C CNN
+F 2 "lib_fp:tht_vertical_rca" H 1275 1550 50  0001 C CNN
 F 3 " ~" H 1275 1550 50  0001 C CNN
 	1    1275 1550
 	-1   0    0    -1  
@@ -123,7 +123,7 @@ U 1 1 5EBBB1FA
 P 3400 1650
 F 0 "U1" H 3400 2017 50  0000 C CNN
 F 1 "AD8044" H 3400 1926 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 3400 1650 50  0001 C CNN
+F 2 "project_parts:DIP+SOIC_14" H 3400 1650 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 3400 1650 50  0001 C CNN
 	1    3400 1650
 	1    0    0    -1  
@@ -180,21 +180,10 @@ U 3 1 5EBD1190
 P 5600 3475
 F 0 "U1" H 5600 3108 50  0000 C CNN
 F 1 "AD8044" H 5600 3199 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 5600 3475 50  0001 C CNN
+F 2 "project_parts:DIP+SOIC_14" H 5600 3475 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 5600 3475 50  0001 C CNN
 	3    5600 3475
 	1    0    0    1   
-$EndComp
-$Comp
-L Device:R R12
-U 1 1 5EBD119A
-P 5525 3000
-F 0 "R12" V 5318 3000 50  0000 C CNN
-F 1 "1k" V 5409 3000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5455 3000 50  0001 C CNN
-F 3 "~" H 5525 3000 50  0001 C CNN
-	1    5525 3000
-	0    1    1    0   
 $EndComp
 Text GLabel 5200 3800 0    50   Input ~ 0
 2.5V
@@ -202,10 +191,6 @@ Wire Wire Line
 	5200 3800 5200 3575
 Wire Wire Line
 	5200 3575 5300 3575
-Wire Wire Line
-	5900 3475 5900 3000
-Wire Wire Line
-	5900 3000 5675 3000
 Wire Wire Line
 	5375 3000 5100 3000
 Wire Wire Line
@@ -260,7 +245,7 @@ L 4xxx:4051 U3
 U 1 1 5EBDE023
 P 8050 1825
 F 0 "U3" H 8200 2775 50  0000 L CNN
-F 1 "4051" H 8200 2675 50  0000 L CNN
+F 1 "CD4051" H 8200 2675 50  0000 L CNN
 F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 8050 1825 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4051bms-52bms-53bms.pdf" H 8050 1825 50  0001 C CNN
 	1    8050 1825
@@ -314,8 +299,8 @@ $Comp
 L Device:R R3
 U 1 1 5EBCD7C2
 P 5550 1375
-F 0 "R3" V 5450 1300 50  0000 C CNN
-F 1 "1k" V 5450 1425 50  0000 C CNN
+F 0 "R3" V 5475 1375 50  0000 C CNN
+F 1 "1.5k" V 5550 1375 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5480 1375 50  0001 C CNN
 F 3 "~" H 5550 1375 50  0001 C CNN
 	1    5550 1375
@@ -327,7 +312,7 @@ U 2 1 5EBC7462
 P 5625 1750
 F 0 "U1" H 5675 1500 50  0000 C CNN
 F 1 "AD8044" H 5675 1575 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 5625 1750 50  0001 C CNN
+F 2 "project_parts:DIP+SOIC_14" H 5625 1750 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 5625 1750 50  0001 C CNN
 	2    5625 1750
 	1    0    0    1   
@@ -365,10 +350,6 @@ Wire Wire Line
 Wire Wire Line
 	6150 1325 7550 1325
 Connection ~ 5925 1750
-Wire Wire Line
-	5900 3475 6275 3475
-Wire Wire Line
-	6275 3475 6275 1425
 Wire Wire Line
 	6275 1425 7550 1425
 Connection ~ 5900 3475
@@ -431,7 +412,7 @@ U 4 1 5EC1C2E9
 P 9375 1325
 F 0 "U1" H 9375 1692 50  0000 C CNN
 F 1 "AD8044" H 9375 1601 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 9375 1325 50  0001 C CNN
+F 2 "project_parts:DIP+SOIC_14" H 9375 1325 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 9375 1325 50  0001 C CNN
 	4    9375 1325
 	1    0    0    -1  
@@ -479,7 +460,7 @@ U 1 1 5EC28FE8
 P 10375 1325
 F 0 "J2" H 10475 1300 50  0000 L CNN
 F 1 "rca" H 10475 1209 50  0000 L CNN
-F 2 "lib_fp:RCJ-024" H 10375 1325 50  0001 C CNN
+F 2 "lib_fp:tht_vertical_rca" H 10375 1325 50  0001 C CNN
 F 3 " ~" H 10375 1325 50  0001 C CNN
 	1    10375 1325
 	1    0    0    -1  
@@ -545,7 +526,7 @@ L Switch:SW_SPDT SW1
 U 1 1 5ED4EE83
 P 3450 5400
 F 0 "SW1" H 3325 5650 50  0000 C CNN
-F 1 "SW_SPST" H 3350 5550 50  0000 C CNN
+F 1 "SPDT" H 3350 5550 50  0000 C CNN
 F 2 "lib_fp:mini_toggle_switch_tayda" H 3450 5400 50  0001 C CNN
 F 3 "~" H 3450 5400 50  0001 C CNN
 	1    3450 5400
@@ -556,7 +537,7 @@ L Switch:SW_SPDT SW2
 U 1 1 5ED5004B
 P 3450 5750
 F 0 "SW2" H 3325 6000 50  0000 C CNN
-F 1 "SW_SPST" H 3350 5900 50  0000 C CNN
+F 1 "SPDT" H 3350 5900 50  0000 C CNN
 F 2 "lib_fp:mini_toggle_switch_tayda" H 3450 5750 50  0001 C CNN
 F 3 "~" H 3450 5750 50  0001 C CNN
 	1    3450 5750
@@ -754,28 +735,12 @@ Wire Wire Line
 	1425 3825 1250 3825
 Wire Wire Line
 	1250 3825 1250 3625
-$Comp
-L Device:R R1
-U 1 1 5EE653FF
-P 5550 1175
-F 0 "R1" V 5450 1075 50  0000 C CNN
-F 1 "1.5k" V 5450 1225 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5480 1175 50  0001 C CNN
-F 3 "~" H 5550 1175 50  0001 C CNN
-	1    5550 1175
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5125 1175 5400 1175
 Wire Wire Line
 	5125 1175 5125 1375
 Wire Wire Line
-	5700 1175 5925 1175
-Wire Wire Line
-	5925 1175 5925 1375
-Wire Wire Line
 	5700 1375 5925 1375
-Connection ~ 5925 1375
 Wire Wire Line
 	5925 1375 5925 1750
 Wire Wire Line
@@ -821,7 +786,7 @@ U 5 1 5EECCE6A
 P 1175 5325
 F 0 "U1" H 1175 5600 50  0000 C CNN
 F 1 "AD8044" H 1250 5525 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 1175 5325 50  0001 C CNN
+F 2 "project_parts:DIP+SOIC_14" H 1175 5325 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 1175 5325 50  0001 C CNN
 	5    1175 5325
 	1    0    0    -1  
@@ -1067,4 +1032,82 @@ Wire Wire Line
 Connection ~ 6125 6725
 Wire Wire Line
 	6125 6725 6525 6725
+$Comp
+L Device:R_POT RV5
+U 1 1 605FE70F
+P 5550 1175
+F 0 "RV5" V 5750 1175 50  0000 C CNN
+F 1 "1k_trim" V 5550 1175 50  0000 C CNN
+F 2 "lib_fp:tht_vertical_trimpot_3362" H 5550 1175 50  0001 C CNN
+F 3 "~" H 5550 1175 50  0001 C CNN
+	1    5550 1175
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 5700 1175
+Wire Wire Line
+	5925 1375 5925 1075
+Wire Wire Line
+	5925 1075 5550 1075
+Wire Wire Line
+	5550 1075 5550 1025
+Connection ~ 5925 1375
+$Comp
+L Device:R_POT RV7
+U 1 1 60634D8A
+P 6050 3475
+F 0 "RV7" V 5935 3475 50  0000 C CNN
+F 1 "1k_trim" V 5844 3475 50  0000 C CNN
+F 2 "lib_fp:tht_vertical_trimpot_3362" H 6050 3475 50  0001 C CNN
+F 3 "~" H 6050 3475 50  0001 C CNN
+	1    6050 3475
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6050 3325 6275 3325
+Wire Wire Line
+	6275 3325 6275 1425
+NoConn ~ 6200 3475
+$Comp
+L Device:C C16
+U 1 1 6064606D
+P 6275 3600
+F 0 "C16" H 6390 3646 50  0000 L CNN
+F 1 "0.001u" H 6390 3555 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 6313 3450 50  0001 C CNN
+F 3 "~" H 6275 3600 50  0001 C CNN
+	1    6275 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6275 3450 6275 3325
+Connection ~ 6275 3325
+$Comp
+L power:GND #PWR052
+U 1 1 6064B833
+P 6275 3750
+F 0 "#PWR052" H 6275 3500 50  0001 C CNN
+F 1 "GND" H 6280 3577 50  0000 C CNN
+F 2 "" H 6275 3750 50  0001 C CNN
+F 3 "" H 6275 3750 50  0001 C CNN
+	1    6275 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV6
+U 1 1 6064BF44
+P 5525 3000
+F 0 "RV6" V 5725 3000 50  0000 C CNN
+F 1 "1k_trim" V 5525 3000 50  0000 C CNN
+F 2 "lib_fp:tht_vertical_trimpot_3362" H 5525 3000 50  0001 C CNN
+F 3 "~" H 5525 3000 50  0001 C CNN
+	1    5525 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5900 2850 5525 2850
+Wire Wire Line
+	5900 2850 5900 3475
+NoConn ~ 5675 3000
+Text Notes 5975 4050 0    50   ~ 0
+rc delay filter
 $EndSCHEMATC

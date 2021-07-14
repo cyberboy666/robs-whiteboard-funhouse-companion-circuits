@@ -99,8 +99,8 @@ L Device:R_POT RV2
 U 1 1 5EE76A23
 P 7625 1100
 F 0 "RV2" V 7418 1100 50  0000 C CNN
-F 1 "5k_pot" V 7509 1100 50  0000 C CNN
-F 2 "lib_fp:Pot_trim_3362_tayda" H 7625 1100 50  0001 C CNN
+F 1 "5k_trim" V 7509 1100 50  0000 C CNN
+F 2 "lib_fp:tht_vertical_trimpot_3362" H 7625 1100 50  0001 C CNN
 F 3 "~" H 7625 1100 50  0001 C CNN
 	1    7625 1100
 	1    0    0    -1  
@@ -247,8 +247,8 @@ L Device:R_POT RV1
 U 1 1 5EE76AA6
 P 9100 875
 F 0 "RV1" V 8893 875 50  0000 C CNN
-F 1 "10k_pot" V 8984 875 50  0000 C CNN
-F 2 "lib_fp:Pot_trim_3362_tayda" H 9100 875 50  0001 C CNN
+F 1 "10k_trim" V 8984 875 50  0000 C CNN
+F 2 "lib_fp:tht_vertical_trimpot_3362" H 9100 875 50  0001 C CNN
 F 3 "~" H 9100 875 50  0001 C CNN
 	1    9100 875 
 	1    0    0    -1  
@@ -299,11 +299,11 @@ sync_extraction
 Text Notes 6850 850  0    79   ~ 0
 blanking
 $Comp
-L 4xxx:4040 U9
+L 4xxx:4040 U6
 U 1 1 5EE76ADD
 P 6000 5175
-F 0 "U9" H 6100 6025 50  0000 C CNN
-F 1 "4040" H 6150 5925 50  0000 C CNN
+F 0 "U6" H 6100 6025 50  0000 C CNN
+F 1 "CD4040" H 6150 5925 50  0000 C CNN
 F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 6000 5175 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4020bms-24bms-40bms.pdf" H 6000 5175 50  0001 C CNN
 	1    6000 5175
@@ -464,8 +464,8 @@ L Device:R_POT RV4
 U 1 1 5EEDDCC3
 P 7100 4525
 F 0 "RV4" V 6893 4525 50  0000 C CNN
-F 1 "20k_pot" V 6984 4525 50  0000 C CNN
-F 2 "lib_fp:Pot_trim_3362_tayda" H 7100 4525 50  0001 C CNN
+F 1 "20k_trim" V 6984 4525 50  0000 C CNN
+F 2 "lib_fp:tht_vertical_trimpot_3362" H 7100 4525 50  0001 C CNN
 F 3 "~" H 7100 4525 50  0001 C CNN
 	1    7100 4525
 	1    0    0    -1  
@@ -508,8 +508,8 @@ L Device:R_POT RV3
 U 1 1 5EEDDCE2
 P 8575 4350
 F 0 "RV3" V 8368 4350 50  0000 C CNN
-F 1 "100k_pot" V 8459 4350 50  0000 C CNN
-F 2 "lib_fp:Pot_trim_3362_tayda" H 8575 4350 50  0001 C CNN
+F 1 "100k_trim" V 8459 4350 50  0000 C CNN
+F 2 "lib_fp:tht_vertical_trimpot_3362" H 8575 4350 50  0001 C CNN
 F 3 "~" H 8575 4350 50  0001 C CNN
 	1    8575 4350
 	1    0    0    -1  
@@ -686,8 +686,8 @@ L symbol:74HC4538 U?
 U 1 1 5EFA3988
 P 2625 3975
 AR Path="/5EFA3988" Ref="U?"  Part="1" 
-AR Path="/5EE0E534/5EFA3988" Ref="U10"  Part="1" 
-F 0 "U10" H 2625 3500 50  0000 C CNN
+AR Path="/5EE0E534/5EFA3988" Ref="U5"  Part="1" 
+F 0 "U5" H 2625 3500 50  0000 C CNN
 F 1 "74HC4538" H 2625 3409 50  0000 C CNN
 F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 2625 3975 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4538B.pdf" H 2625 3975 50  0001 C CNN
@@ -805,8 +805,8 @@ L symbol:74HC4538 U?
 U 3 1 5EFFD8AE
 P 3050 6825
 AR Path="/5EFFD8AE" Ref="U?"  Part="3" 
-AR Path="/5EE0E534/5EFFD8AE" Ref="U10"  Part="3" 
-F 0 "U10" H 3280 6871 50  0000 L CNN
+AR Path="/5EE0E534/5EFFD8AE" Ref="U5"  Part="3" 
+F 0 "U5" H 3280 6871 50  0000 L CNN
 F 1 "74HC4538" H 3280 6780 50  0000 L CNN
 F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 3050 6825 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4538B.pdf" H 3050 6825 50  0001 C CNN
@@ -869,43 +869,43 @@ Connection ~ 6875 5575
 Text Notes 9000 4375 0    50   ~ 0
 RV4, RV3 and R25 value depends on ntsc/pal
 $Comp
-L Comparator:LM393 U?
+L Comparator:LM393 U2
 U 1 1 5F39D3E6
 P 2450 1425
-F 0 "U?" H 2450 1792 50  0000 C CNN
+F 0 "U2" H 2450 1792 50  0000 C CNN
 F 1 "LM393" H 2450 1701 50  0000 C CNN
-F 2 "" H 2450 1425 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 2450 1425 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 2450 1425 50  0001 C CNN
 	1    2450 1425
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM393 U?
+L Comparator:LM393 U2
 U 2 1 5F3A498B
 P 4400 1325
-F 0 "U?" H 4400 1692 50  0000 C CNN
+F 0 "U2" H 4400 1692 50  0000 C CNN
 F 1 "LM393" H 4400 1601 50  0000 C CNN
-F 2 "" H 4400 1325 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 4400 1325 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 4400 1325 50  0001 C CNN
 	2    4400 1325
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM393 U?
+L Comparator:LM393 U2
 U 3 1 5F3A762C
 P 4150 6850
-F 0 "U?" H 4108 6896 50  0000 L CNN
+F 0 "U2" H 4108 6896 50  0000 L CNN
 F 1 "LM393" H 4108 6805 50  0000 L CNN
-F 2 "" H 4150 6850 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 4150 6850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 4150 6850 50  0001 C CNN
 	3    4150 6850
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR050
 U 1 1 5F3A8648
 P 4050 6550
-F 0 "#PWR?" H 4050 6400 50  0001 C CNN
+F 0 "#PWR050" H 4050 6400 50  0001 C CNN
 F 1 "+5V" H 4065 6723 50  0000 C CNN
 F 2 "" H 4050 6550 50  0001 C CNN
 F 3 "" H 4050 6550 50  0001 C CNN
@@ -913,10 +913,10 @@ F 3 "" H 4050 6550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR051
 U 1 1 5F3A8BDA
 P 4050 7150
-F 0 "#PWR?" H 4050 6900 50  0001 C CNN
+F 0 "#PWR051" H 4050 6900 50  0001 C CNN
 F 1 "GND" H 4055 6977 50  0000 C CNN
 F 2 "" H 4050 7150 50  0001 C CNN
 F 3 "" H 4050 7150 50  0001 C CNN

@@ -99,8 +99,8 @@ L Device:R_POT RV2
 U 1 1 5EE76A23
 P 7625 1100
 F 0 "RV2" V 7418 1100 50  0000 C CNN
-F 1 "5k_pot" V 7509 1100 50  0000 C CNN
-F 2 "lib_fp:Pot_trim_3362_tayda" H 7625 1100 50  0001 C CNN
+F 1 "5k_trim" V 7509 1100 50  0000 C CNN
+F 2 "lib_fp:tht_vertical_trimpot_3362" H 7625 1100 50  0001 C CNN
 F 3 "~" H 7625 1100 50  0001 C CNN
 	1    7625 1100
 	1    0    0    -1  
@@ -247,8 +247,8 @@ L Device:R_POT RV1
 U 1 1 5EE76AA6
 P 9100 875
 F 0 "RV1" V 8893 875 50  0000 C CNN
-F 1 "10k_pot" V 8984 875 50  0000 C CNN
-F 2 "lib_fp:Pot_trim_3362_tayda" H 9100 875 50  0001 C CNN
+F 1 "10k_trim" V 8984 875 50  0000 C CNN
+F 2 "lib_fp:tht_vertical_trimpot_3362" H 9100 875 50  0001 C CNN
 F 3 "~" H 9100 875 50  0001 C CNN
 	1    9100 875 
 	1    0    0    -1  
@@ -303,7 +303,7 @@ L 4xxx:4040 U6
 U 1 1 5EE76ADD
 P 6000 5175
 F 0 "U6" H 6100 6025 50  0000 C CNN
-F 1 "4040" H 6150 5925 50  0000 C CNN
+F 1 "CD4040" H 6150 5925 50  0000 C CNN
 F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 6000 5175 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4020bms-24bms-40bms.pdf" H 6000 5175 50  0001 C CNN
 	1    6000 5175
@@ -464,8 +464,8 @@ L Device:R_POT RV4
 U 1 1 5EEDDCC3
 P 7100 4525
 F 0 "RV4" V 6893 4525 50  0000 C CNN
-F 1 "20k_pot" V 6984 4525 50  0000 C CNN
-F 2 "lib_fp:Pot_trim_3362_tayda" H 7100 4525 50  0001 C CNN
+F 1 "20k_trim" V 6984 4525 50  0000 C CNN
+F 2 "lib_fp:tht_vertical_trimpot_3362" H 7100 4525 50  0001 C CNN
 F 3 "~" H 7100 4525 50  0001 C CNN
 	1    7100 4525
 	1    0    0    -1  
@@ -508,8 +508,8 @@ L Device:R_POT RV3
 U 1 1 5EEDDCE2
 P 8575 4350
 F 0 "RV3" V 8368 4350 50  0000 C CNN
-F 1 "100k_pot" V 8459 4350 50  0000 C CNN
-F 2 "lib_fp:Pot_trim_3362_tayda" H 8575 4350 50  0001 C CNN
+F 1 "100k_trim" V 8459 4350 50  0000 C CNN
+F 2 "lib_fp:tht_vertical_trimpot_3362" H 8575 4350 50  0001 C CNN
 F 3 "~" H 8575 4350 50  0001 C CNN
 	1    8575 4350
 	1    0    0    -1  
