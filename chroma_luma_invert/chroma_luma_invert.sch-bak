@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:chroma_luma_invert-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -123,7 +122,7 @@ U 1 1 5EBBB1FA
 P 3400 1650
 F 0 "U1" H 3400 2017 50  0000 C CNN
 F 1 "AD8044" H 3400 1926 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3400 1650 50  0001 C CNN
+F 2 "project_parts:DIP+SOIC_14" H 3400 1650 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 3400 1650 50  0001 C CNN
 	1    3400 1650
 	1    0    0    -1  
@@ -180,7 +179,7 @@ U 3 1 5EBD1190
 P 5600 3475
 F 0 "U1" H 5600 3108 50  0000 C CNN
 F 1 "AD8044" H 5600 3199 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5600 3475 50  0001 C CNN
+F 2 "project_parts:DIP+SOIC_14" H 5600 3475 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 5600 3475 50  0001 C CNN
 	3    5600 3475
 	1    0    0    1   
@@ -312,7 +311,7 @@ U 2 1 5EBC7462
 P 5625 1750
 F 0 "U1" H 5675 1500 50  0000 C CNN
 F 1 "AD8044" H 5675 1575 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5625 1750 50  0001 C CNN
+F 2 "project_parts:DIP+SOIC_14" H 5625 1750 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 5625 1750 50  0001 C CNN
 	2    5625 1750
 	1    0    0    1   
@@ -412,7 +411,7 @@ U 4 1 5EC1C2E9
 P 9375 1325
 F 0 "U1" H 9375 1692 50  0000 C CNN
 F 1 "AD8044" H 9375 1601 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 9375 1325 50  0001 C CNN
+F 2 "project_parts:DIP+SOIC_14" H 9375 1325 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 9375 1325 50  0001 C CNN
 	4    9375 1325
 	1    0    0    -1  
@@ -786,7 +785,7 @@ U 5 1 5EECCE6A
 P 1175 5325
 F 0 "U1" H 1175 5600 50  0000 C CNN
 F 1 "AD8044" H 1250 5525 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1175 5325 50  0001 C CNN
+F 2 "project_parts:DIP+SOIC_14" H 1175 5325 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 1175 5325 50  0001 C CNN
 	5    1175 5325
 	1    0    0    -1  
@@ -902,28 +901,6 @@ F 3 "~" H 5725 6875 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C14
-U 1 1 5F3B2212
-P 6125 6875
-F 0 "C14" H 5950 6775 50  0000 C CNN
-F 1 "0.1u" H 5925 6850 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 6163 6725 50  0001 C CNN
-F 3 "~" H 6125 6875 50  0001 C CNN
-	1    6125 6875
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C15
-U 1 1 5F3B2B2B
-P 6525 6875
-F 0 "C15" H 6350 6775 50  0000 C CNN
-F 1 "0.1u" H 6325 6850 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 6563 6725 50  0001 C CNN
-F 3 "~" H 6525 6875 50  0001 C CNN
-	1    6525 6875
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR023
 U 1 1 5F3B3278
 P 4550 7025
@@ -968,28 +945,6 @@ F 3 "" H 5725 7025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR048
-U 1 1 5F3B452D
-P 6125 7025
-F 0 "#PWR048" H 6125 6775 50  0001 C CNN
-F 1 "GND" H 6130 6852 50  0000 C CNN
-F 2 "" H 6125 7025 50  0001 C CNN
-F 3 "" H 6125 7025 50  0001 C CNN
-	1    6125 7025
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR049
-U 1 1 5F3B48D7
-P 6525 7025
-F 0 "#PWR049" H 6525 6775 50  0001 C CNN
-F 1 "GND" H 6530 6852 50  0000 C CNN
-F 2 "" H 6525 7025 50  0001 C CNN
-F 3 "" H 6525 7025 50  0001 C CNN
-	1    6525 7025
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:CP1 C8
 U 1 1 5F3B5622
 P 3775 6875
@@ -1026,12 +981,6 @@ Wire Wire Line
 Connection ~ 5325 6725
 Wire Wire Line
 	5325 6725 5725 6725
-Connection ~ 5725 6725
-Wire Wire Line
-	5725 6725 6125 6725
-Connection ~ 6125 6725
-Wire Wire Line
-	6125 6725 6525 6725
 $Comp
 L Device:R_POT RV5
 U 1 1 605FE70F

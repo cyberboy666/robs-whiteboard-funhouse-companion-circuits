@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:two_comparator_effect-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -344,7 +343,7 @@ Wire Wire Line
 	5950 5275 6575 5275
 Wire Wire Line
 	5925 2850 6475 2850
-Text Notes 6275 5025 0    50   ~ 0
+Text Notes 5150 4950 0    50   ~ 0
 SYNC
 $Comp
 L Transistor_BJT:2N3904 Q1
@@ -468,9 +467,9 @@ F 3 "" H 8900 4625 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8900 4550 8900 4625
-Text Notes 1875 3875 0    50   ~ 0
+Text Notes 2350 3700 0    50   ~ 0
 VIDEO_IN
-Text Notes 9100 4150 0    50   ~ 0
+Text Notes 8450 3950 0    50   ~ 0
 BLACK & WHITE \nVIDEO OUT
 Text Notes 3600 2775 0    50   ~ 0
 THRESHOLD_2

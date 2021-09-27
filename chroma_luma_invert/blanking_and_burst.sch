@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:chroma_luma_invert-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,729 +13,291 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1750 1325 0    89   Input ~ 0
+Text HLabel 1600 3850 0    89   Input ~ 0
 original_video
-Text HLabel 10150 1725 2    89   Input ~ 0
+Text HLabel 9950 2100 2    89   Input ~ 0
 blanking
 $Comp
-L Device:R R22
-U 1 1 5EE769DA
-P 2000 1725
-F 0 "R22" H 1930 1679 50  0000 R CNN
-F 1 "10k" H 1930 1770 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1930 1725 50  0001 C CNN
-F 3 "~" H 2000 1725 50  0001 C CNN
-	1    2000 1725
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R21
-U 1 1 5EE769E0
-P 1775 1725
-F 0 "R21" H 1705 1679 50  0000 R CNN
-F 1 "3.9k" H 1725 1775 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1705 1725 50  0001 C CNN
-F 3 "~" H 1775 1725 50  0001 C CNN
-	1    1775 1725
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR025
-U 1 1 5EE769EF
-P 2000 1950
-F 0 "#PWR025" H 2000 1700 50  0001 C CNN
-F 1 "GND" H 2005 1777 50  0000 C CNN
-F 2 "" H 2000 1950 50  0001 C CNN
-F 3 "" H 2000 1950 50  0001 C CNN
-	1    2000 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2000 1875 2000 1950
-Text GLabel 1750 2025 0    50   Input ~ 0
-2.5V
-Wire Wire Line
-	1750 2025 1775 2025
-Wire Wire Line
-	1775 2025 1775 1875
-Wire Wire Line
-	2150 1525 2000 1525
-Wire Wire Line
-	1775 1525 1775 1575
-Wire Wire Line
-	2000 1575 2000 1525
-Connection ~ 2000 1525
-Wire Wire Line
-	2000 1525 1775 1525
-Wire Wire Line
-	3125 1425 2750 1425
-Wire Wire Line
-	1750 1325 2150 1325
-$Comp
-L power:+5V #PWR018
+L power:+5V #PWR038
 U 1 1 5EE76A17
-P 7625 950
-F 0 "#PWR018" H 7625 800 50  0001 C CNN
-F 1 "+5V" H 7640 1123 50  0000 C CNN
-F 2 "" H 7625 950 50  0001 C CNN
-F 3 "" H 7625 950 50  0001 C CNN
-	1    7625 950 
+P 6400 1100
+F 0 "#PWR038" H 6400 950 50  0001 C CNN
+F 1 "+5V" H 6415 1273 50  0000 C CNN
+F 2 "" H 6400 1100 50  0001 C CNN
+F 3 "" H 6400 1100 50  0001 C CNN
+	1    6400 1100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R18
-U 1 1 5EE76A1D
-P 7950 1325
-F 0 "R18" H 7880 1279 50  0000 R CNN
-F 1 "10k" H 7880 1370 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7880 1325 50  0001 C CNN
-F 3 "~" H 7950 1325 50  0001 C CNN
-	1    7950 1325
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_POT RV2
-U 1 1 5EE76A23
-P 7625 1100
-F 0 "RV2" V 7418 1100 50  0000 C CNN
-F 1 "5k_trim" V 7509 1100 50  0000 C CNN
-F 2 "lib_fp:tht_vertical_trimpot_3362" H 7625 1100 50  0001 C CNN
-F 3 "~" H 7625 1100 50  0001 C CNN
-	1    7625 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C3
-U 1 1 5EE76A29
-P 8050 1525
-F 0 "C3" V 7950 1325 50  0000 R CNN
-F 1 "0.001u" V 8050 1375 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 8088 1375 50  0001 C CNN
-F 3 "~" H 8050 1525 50  0001 C CNN
-	1    8050 1525
-	0    1    1    0   
-$EndComp
-Text GLabel 7300 2125 0    59   Input ~ 0
-sync
 $Comp
 L Device:R R17
-U 1 1 5EE76A3D
-P 3125 1250
-F 0 "R17" H 3055 1204 50  0000 R CNN
-F 1 "1k" H 3055 1295 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3055 1250 50  0001 C CNN
-F 3 "~" H 3125 1250 50  0001 C CNN
-	1    3125 1250
+U 1 1 5EE76A1D
+P 6750 1500
+F 0 "R17" H 6680 1454 50  0000 R CNN
+F 1 "10k" H 6680 1545 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6680 1500 50  0001 C CNN
+F 3 "~" H 6750 1500 50  0001 C CNN
+	1    6750 1500
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+5V #PWR020
-U 1 1 5EE76A43
-P 3125 1100
-F 0 "#PWR020" H 3125 950 50  0001 C CNN
-F 1 "+5V" H 3140 1273 50  0000 C CNN
-F 2 "" H 3125 1100 50  0001 C CNN
-F 3 "" H 3125 1100 50  0001 C CNN
-	1    3125 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3125 1425 3125 1400
-$Comp
-L Device:R R20
-U 1 1 5EE76A4A
-P 3425 1425
-F 0 "R20" H 3355 1379 50  0000 R CNN
-F 1 "15k" H 3355 1470 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3355 1425 50  0001 C CNN
-F 3 "~" H 3425 1425 50  0001 C CNN
-	1    3425 1425
-	0    -1   -1   0   
-$EndComp
-Connection ~ 3125 1425
-$Comp
-L Device:C C4
-U 1 1 5EE76A52
-P 3650 1675
-F 0 "C4" H 3775 1800 50  0000 C CNN
-F 1 "0.001u" H 3875 1700 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 3688 1525 50  0001 C CNN
-F 3 "~" H 3650 1675 50  0001 C CNN
-	1    3650 1675
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR026
-U 1 1 5EE76A58
-P 3650 1950
-F 0 "#PWR026" H 3650 1700 50  0001 C CNN
-F 1 "GND" H 3655 1777 50  0000 C CNN
-F 2 "" H 3650 1950 50  0001 C CNN
-F 3 "" H 3650 1950 50  0001 C CNN
-	1    3650 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 1950 3650 1825
-Wire Wire Line
-	3650 1525 3650 1425
-Wire Wire Line
-	3650 1425 3575 1425
-Text GLabel 3875 1225 0    50   Input ~ 0
-2.5V
-$Comp
-L Device:R R19
-U 1 1 5EE76A7E
-P 4875 1175
-F 0 "R19" H 4805 1129 50  0000 R CNN
-F 1 "1k" H 4805 1220 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4805 1175 50  0001 C CNN
-F 3 "~" H 4875 1175 50  0001 C CNN
-	1    4875 1175
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+5V #PWR022
-U 1 1 5EE76A84
-P 4875 1025
-F 0 "#PWR022" H 4875 875 50  0001 C CNN
-F 1 "+5V" H 4890 1198 50  0000 C CNN
-F 2 "" H 4875 1025 50  0001 C CNN
-F 3 "" H 4875 1025 50  0001 C CNN
-	1    4875 1025
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4875 1325 4700 1325
-Connection ~ 4875 1325
-$Comp
-L power:GND #PWR028
-U 1 1 5EE76A8D
-P 7400 2175
-F 0 "#PWR028" H 7400 1925 50  0001 C CNN
-F 1 "GND" H 7405 2002 50  0000 C CNN
-F 2 "" H 7400 2175 50  0001 C CNN
-F 3 "" H 7400 2175 50  0001 C CNN
-	1    7400 2175
+L Device:R_POT RV5
+U 1 1 5EE76A23
+P 6400 1250
+F 0 "RV5" V 6193 1250 50  0000 C CNN
+F 1 "5k_trim" V 6284 1250 50  0000 C CNN
+F 2 "lib_fp:tht_vertical_trimpot_3362" H 6400 1250 50  0001 C CNN
+F 3 "~" H 6400 1250 50  0001 C CNN
+	1    6400 1250
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR017
-U 1 1 5EE76A9A
-P 9100 725
-F 0 "#PWR017" H 9100 575 50  0001 C CNN
-F 1 "+5V" H 9115 898 50  0000 C CNN
-F 2 "" H 9100 725 50  0001 C CNN
-F 3 "" H 9100 725 50  0001 C CNN
-	1    9100 725 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R16
-U 1 1 5EE76AA0
-P 9425 1100
-F 0 "R16" H 9355 1054 50  0000 R CNN
-F 1 "68k" H 9355 1145 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9355 1100 50  0001 C CNN
-F 3 "~" H 9425 1100 50  0001 C CNN
-	1    9425 1100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_POT RV1
-U 1 1 5EE76AA6
-P 9100 875
-F 0 "RV1" V 8893 875 50  0000 C CNN
-F 1 "10k_trim" V 8984 875 50  0000 C CNN
-F 2 "lib_fp:tht_vertical_trimpot_3362" H 9100 875 50  0001 C CNN
-F 3 "~" H 9100 875 50  0001 C CNN
-	1    9100 875 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C2
-U 1 1 5EE76AAC
-P 9525 1325
-F 0 "C2" V 9425 1125 50  0000 R CNN
-F 1 "0.001u" V 9500 1200 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 9563 1175 50  0001 C CNN
-F 3 "~" H 9525 1325 50  0001 C CNN
-	1    9525 1325
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9025 1925 8550 1925
-$Comp
-L power:GND #PWR027
-U 1 1 5EE76AC0
-P 8825 1975
-F 0 "#PWR027" H 8825 1725 50  0001 C CNN
-F 1 "GND" H 8830 1802 50  0000 C CNN
-F 2 "" H 8825 1975 50  0001 C CNN
-F 3 "" H 8825 1975 50  0001 C CNN
-	1    8825 1975
-	1    0    0    -1  
-$EndComp
-NoConn ~ 8550 2225
-NoConn ~ 10025 2025
-$Comp
-L power:+5V #PWR029
-U 1 1 5EE76AD0
-P 8775 2625
-F 0 "#PWR029" H 8775 2475 50  0001 C CNN
-F 1 "+5V" H 8900 2700 50  0000 C CNN
-F 2 "" H 8775 2625 50  0001 C CNN
-F 3 "" H 8775 2625 50  0001 C CNN
-	1    8775 2625
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10150 1725 10025 1725
-Wire Wire Line
-	7550 2025 7400 2025
-Text Notes 1825 825  0    79   ~ 0
-sync_extraction
-Text Notes 6850 850  0    79   ~ 0
-blanking
-$Comp
-L 4xxx:4040 U6
-U 1 1 5EE76ADD
-P 6000 5175
-F 0 "U6" H 6100 6025 50  0000 C CNN
-F 1 "CD4040" H 6150 5925 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 6000 5175 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4020bms-24bms-40bms.pdf" H 6000 5175 50  0001 C CNN
-	1    6000 5175
-	1    0    0    -1  
-$EndComp
-Text GLabel 5275 4975 0    59   Input ~ 0
-v_sync
-Wire Wire Line
-	5500 4975 5275 4975
-$Comp
-L power:+5V #PWR034
-U 1 1 5EE76AE5
-P 6000 4375
-F 0 "#PWR034" H 6000 4225 50  0001 C CNN
-F 1 "+5V" H 6015 4548 50  0000 C CNN
-F 2 "" H 6000 4375 50  0001 C CNN
-F 3 "" H 6000 4375 50  0001 C CNN
-	1    6000 4375
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR040
-U 1 1 5EE76AEB
-P 6000 6075
-F 0 "#PWR040" H 6000 5825 50  0001 C CNN
-F 1 "GND" H 6005 5902 50  0000 C CNN
-F 2 "" H 6000 6075 50  0001 C CNN
-F 3 "" H 6000 6075 50  0001 C CNN
-	1    6000 6075
-	1    0    0    -1  
-$EndComp
-NoConn ~ 6500 5775
-NoConn ~ 6500 5675
-NoConn ~ 6500 5575
-NoConn ~ 6500 5375
-NoConn ~ 6500 5275
-NoConn ~ 6500 5175
-NoConn ~ 6500 5075
-NoConn ~ 6500 4975
-NoConn ~ 6500 4875
-NoConn ~ 6500 4775
-NoConn ~ 6500 4675
-Text GLabel 5275 4675 0    59   Input ~ 0
-sync
-Wire Wire Line
-	5275 4675 5500 4675
-Text GLabel 3150 2375 2    59   Input ~ 0
-sync
-Text Notes 6825 4000 0    79   ~ 0
-vertical_blanking
-Text GLabel 7475 2550 0    59   Input ~ 0
-v_blanking
-Wire Wire Line
-	7475 2550 7550 2550
-Wire Wire Line
-	7550 2550 7550 2325
-Wire Wire Line
-	3125 1425 3275 1425
-Text GLabel 5125 1325 2    59   Input ~ 0
-v_sync
-Wire Wire Line
-	4875 1325 5125 1325
-Wire Wire Line
-	3125 1425 3125 2375
-Wire Wire Line
-	3125 2375 3150 2375
-Text Notes 1550 3075 0    79   ~ 0
-burst
-Text HLabel 8650 3000 0    89   Input ~ 0
-blanking_enable
-$Comp
-L Device:R R23
-U 1 1 5ED36E19
-P 8775 2775
-F 0 "R23" H 8705 2729 50  0000 R CNN
-F 1 "10k" H 8705 2820 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8705 2775 50  0001 C CNN
-F 3 "~" H 8775 2775 50  0001 C CNN
-	1    8775 2775
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8650 3000 8775 3000
-Wire Wire Line
-	8775 2925 8775 3000
-Connection ~ 8775 3000
-Wire Wire Line
-	8775 3000 9025 3000
-Text GLabel 10150 1500 2    59   Input ~ 0
-blanking
-Wire Wire Line
-	10150 1500 10025 1500
-Wire Wire Line
-	10025 1500 10025 1725
-$Comp
-L symbol:74HC4538 U?
-U 1 1 5EE804B9
-P 8050 2025
-AR Path="/5EE804B9" Ref="U?"  Part="1" 
-AR Path="/5EE0E534/5EE804B9" Ref="U7"  Part="1" 
-F 0 "U7" H 8050 1550 50  0000 C CNN
-F 1 "74HC4538" H 8050 1459 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 8050 2025 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4538B.pdf" H 8050 2025 50  0001 C CNN
-	1    8050 2025
-	1    0    0    -1  
-$EndComp
-$Comp
-L symbol:74HC4538 U?
-U 2 1 5EE91B84
-P 9525 1825
-AR Path="/5EE91B84" Ref="U?"  Part="2" 
-AR Path="/5EE0E534/5EE91B84" Ref="U7"  Part="2" 
-F 0 "U7" H 9525 1350 50  0000 C CNN
-F 1 "74HC4538" H 9525 1259 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 9525 1825 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4538B.pdf" H 9525 1825 50  0001 C CNN
-	2    9525 1825
-	1    0    0    -1  
-$EndComp
-Connection ~ 10025 1725
-Wire Wire Line
-	7300 2125 7550 2125
-Wire Wire Line
-	7400 2175 7400 2025
-Wire Wire Line
-	7775 1100 7950 1100
-Wire Wire Line
-	7950 1100 7950 1175
-Wire Wire Line
-	9250 875  9425 875 
-Wire Wire Line
-	9425 875  9425 950 
-$Comp
-L power:+5V #PWR033
-U 1 1 5EEDDCB7
-P 7100 4375
-F 0 "#PWR033" H 7100 4225 50  0001 C CNN
-F 1 "+5V" H 7115 4548 50  0000 C CNN
-F 2 "" H 7100 4375 50  0001 C CNN
-F 3 "" H 7100 4375 50  0001 C CNN
-	1    7100 4375
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R26
-U 1 1 5EEDDCBD
-P 7425 4750
-F 0 "R26" H 7355 4704 50  0000 R CNN
-F 1 "10k" H 7355 4795 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7355 4750 50  0001 C CNN
-F 3 "~" H 7425 4750 50  0001 C CNN
-	1    7425 4750
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_POT RV4
-U 1 1 5EEDDCC3
-P 7100 4525
-F 0 "RV4" V 6893 4525 50  0000 C CNN
-F 1 "20k_trim" V 6984 4525 50  0000 C CNN
-F 2 "lib_fp:tht_vertical_trimpot_3362" H 7100 4525 50  0001 C CNN
-F 3 "~" H 7100 4525 50  0001 C CNN
-	1    7100 4525
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C7
-U 1 1 5EEDDCC9
-P 7525 4975
-F 0 "C7" V 7425 4775 50  0000 R CNN
-F 1 "0.01u" V 7500 4850 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 7563 4825 50  0001 C CNN
-F 3 "~" H 7525 4975 50  0001 C CNN
-	1    7525 4975
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR032
-U 1 1 5EEDDCD6
-P 8575 4200
-F 0 "#PWR032" H 8575 4050 50  0001 C CNN
-F 1 "+5V" H 8590 4373 50  0000 C CNN
-F 2 "" H 8575 4200 50  0001 C CNN
-F 3 "" H 8575 4200 50  0001 C CNN
-	1    8575 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R25
-U 1 1 5EEDDCDC
-P 8900 4575
-F 0 "R25" H 8830 4529 50  0000 R CNN
-F 1 "15k" H 8830 4620 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8830 4575 50  0001 C CNN
-F 3 "~" H 8900 4575 50  0001 C CNN
-	1    8900 4575
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_POT RV3
-U 1 1 5EEDDCE2
-P 8575 4350
-F 0 "RV3" V 8368 4350 50  0000 C CNN
-F 1 "100k_trim" V 8459 4350 50  0000 C CNN
-F 2 "lib_fp:tht_vertical_trimpot_3362" H 8575 4350 50  0001 C CNN
-F 3 "~" H 8575 4350 50  0001 C CNN
-	1    8575 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C6
-U 1 1 5EEDDCE8
-P 9000 4775
-F 0 "C6" V 8925 4600 50  0000 R CNN
-F 1 "0.01u" V 9000 4675 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 9038 4625 50  0001 C CNN
-F 3 "~" H 9000 4775 50  0001 C CNN
-	1    9000 4775
+L Device:C_Small C12
+U 1 1 5EE76A29
+P 6850 1700
+F 0 "C12" V 6750 1500 50  0000 R CNN
+F 1 "0.001u" V 6850 1550 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 6888 1550 50  0001 C CNN
+F 3 "~" H 6850 1700 50  0001 C CNN
+	1    6850 1700
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR036
-U 1 1 5EEDDCF5
-P 8400 5400
-F 0 "#PWR036" H 8400 5150 50  0001 C CNN
-F 1 "GND" H 8405 5227 50  0000 C CNN
-F 2 "" H 8400 5400 50  0001 C CNN
-F 3 "" H 8400 5400 50  0001 C CNN
-	1    8400 5400
+U 1 1 5EE76A8D
+P 6200 2350
+F 0 "#PWR036" H 6200 2100 50  0001 C CNN
+F 1 "GND" H 6205 2177 50  0000 C CNN
+F 2 "" H 6200 2350 50  0001 C CNN
+F 3 "" H 6200 2350 50  0001 C CNN
+	1    6200 2350
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8025 5675
+$Comp
+L power:+5V #PWR043
+U 1 1 5EE76A9A
+P 7900 1050
+F 0 "#PWR043" H 7900 900 50  0001 C CNN
+F 1 "+5V" H 7915 1223 50  0000 C CNN
+F 2 "" H 7900 1050 50  0001 C CNN
+F 3 "" H 7900 1050 50  0001 C CNN
+	1    7900 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 5EE76AA0
+P 8200 1450
+F 0 "R19" H 8130 1404 50  0000 R CNN
+F 1 "68k" H 8130 1495 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8130 1450 50  0001 C CNN
+F 3 "~" H 8200 1450 50  0001 C CNN
+	1    8200 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV7
+U 1 1 5EE76AA6
+P 7900 1200
+F 0 "RV7" V 7693 1200 50  0000 C CNN
+F 1 "10k_trim" V 7784 1200 50  0000 C CNN
+F 2 "lib_fp:tht_vertical_trimpot_3362" H 7900 1200 50  0001 C CNN
+F 3 "~" H 7900 1200 50  0001 C CNN
+	1    7900 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C14
+U 1 1 5EE76AAC
+P 8300 1700
+F 0 "C14" V 8200 1500 50  0000 R CNN
+F 1 "0.001u" V 8275 1575 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 8338 1550 50  0001 C CNN
+F 3 "~" H 8300 1700 50  0001 C CNN
+	1    8300 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR041
+U 1 1 5EE76AC0
+P 7650 2700
+F 0 "#PWR041" H 7650 2450 50  0001 C CNN
+F 1 "GND" H 7655 2527 50  0000 C CNN
+F 2 "" H 7650 2700 50  0001 C CNN
+F 3 "" H 7650 2700 50  0001 C CNN
+	1    7650 2700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8800 2400
+$Comp
+L power:+5V #PWR029
+U 1 1 5EE76AD0
+P 2100 2550
+F 0 "#PWR029" H 2100 2400 50  0001 C CNN
+F 1 "+5V" H 2100 2700 50  0000 C CNN
+F 2 "" H 2100 2550 50  0001 C CNN
+F 3 "" H 2100 2550 50  0001 C CNN
+	1    2100 2550
+	1    0    0    -1  
+$EndComp
+Text Notes 2150 3200 0    79   ~ 0
+sync_extraction
+Text Notes 5650 1000 0    79   ~ 0
+blanking
+Text Notes 6000 5800 0    79   ~ 0
+vertical_blanking
+Text GLabel 3950 4350 2    59   Input ~ 0
+v_sync
+Text HLabel 1750 3050 0    89   Input ~ 0
+blanking_enable
+$Comp
+L Device:R R15
+U 1 1 5ED36E19
+P 2100 2750
+F 0 "R15" H 2030 2704 50  0000 R CNN
+F 1 "10k" H 2030 2795 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2030 2750 50  0001 C CNN
+F 3 "~" H 2100 2750 50  0001 C CNN
+	1    2100 2750
+	-1   0    0    1   
+$EndComp
+Text GLabel 8950 2300 2    59   Input ~ 0
+blanking
+$Comp
+L symbol:74HC4538 U?
+U 1 1 5EE804B9
+P 6850 2200
+AR Path="/5EE804B9" Ref="U?"  Part="1" 
+AR Path="/5EE0E534/5EE804B9" Ref="U5"  Part="1" 
+F 0 "U5" H 6850 1725 50  0000 C CNN
+F 1 "74HC4538" H 6850 1634 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 6850 2200 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4538B.pdf" H 6850 2200 50  0001 C CNN
+	1    6850 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR037
+U 1 1 5EEDDCB7
+P 6300 3850
+F 0 "#PWR037" H 6300 3700 50  0001 C CNN
+F 1 "+5V" H 6315 4023 50  0000 C CNN
+F 2 "" H 6300 3850 50  0001 C CNN
+F 3 "" H 6300 3850 50  0001 C CNN
+	1    6300 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV4
+U 1 1 5EEDDCC3
+P 6300 4000
+F 0 "RV4" V 6093 4000 50  0000 C CNN
+F 1 "z1" V 6184 4000 50  0000 C CNN
+F 2 "lib_fp:tht_vertical_trimpot_3362" H 6300 4000 50  0001 C CNN
+F 3 "~" H 6300 4000 50  0001 C CNN
+	1    6300 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR042
+U 1 1 5EEDDCD6
+P 7750 3850
+F 0 "#PWR042" H 7750 3700 50  0001 C CNN
+F 1 "+5V" H 7765 4023 50  0000 C CNN
+F 2 "" H 7750 3850 50  0001 C CNN
+F 3 "" H 7750 3850 50  0001 C CNN
+	1    7750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5EEDDCDC
+P 8100 4250
+F 0 "R18" H 8030 4204 50  0000 R CNN
+F 1 "y2" H 8030 4295 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8030 4250 50  0001 C CNN
+F 3 "~" H 8100 4250 50  0001 C CNN
+	1    8100 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV6
+U 1 1 5EEDDCE2
+P 7750 4000
+F 0 "RV6" V 7543 4000 50  0000 C CNN
+F 1 "z2" V 7634 4000 50  0000 C CNN
+F 2 "lib_fp:tht_vertical_trimpot_3362" H 7750 4000 50  0001 C CNN
+F 3 "~" H 7750 4000 50  0001 C CNN
+	1    7750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C13
+U 1 1 5EEDDCE8
+P 8200 4450
+F 0 "C13" V 8125 4275 50  0000 R CNN
+F 1 "x2" V 8200 4250 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 8238 4300 50  0001 C CNN
+F 3 "~" H 8200 4450 50  0001 C CNN
+	1    8200 4450
+	0    1    1    0   
+$EndComp
+NoConn ~ 7250 5150
 $Comp
 L symbol:74HC4538 U?
 U 1 1 5EEDDD18
-P 7525 5475
+P 6750 4950
 AR Path="/5EEDDD18" Ref="U?"  Part="1" 
-AR Path="/5EE0E534/5EEDDD18" Ref="U8"  Part="1" 
-F 0 "U8" H 7525 5000 50  0000 C CNN
-F 1 "74HC4538" H 7525 4909 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 7525 5475 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4538B.pdf" H 7525 5475 50  0001 C CNN
-	1    7525 5475
+AR Path="/5EE0E534/5EEDDD18" Ref="U4"  Part="1" 
+F 0 "U4" H 6750 4475 50  0000 C CNN
+F 1 "74HC4538" H 6750 4384 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 6750 4950 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4538B.pdf" H 6750 4950 50  0001 C CNN
+	1    6750 4950
 	1    0    0    -1  
 $EndComp
 $Comp
 L symbol:74HC4538 U?
 U 2 1 5EEDDD1F
-P 9000 5275
+P 8200 4950
 AR Path="/5EEDDD1F" Ref="U?"  Part="2" 
-AR Path="/5EE0E534/5EEDDD1F" Ref="U8"  Part="2" 
-F 0 "U8" H 9000 4800 50  0000 C CNN
-F 1 "74HC4538" H 9000 4709 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 9000 5275 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4538B.pdf" H 9000 5275 50  0001 C CNN
-	2    9000 5275
+AR Path="/5EE0E534/5EEDDD1F" Ref="U4"  Part="2" 
+F 0 "U4" H 8200 4475 50  0000 C CNN
+F 1 "74HC4538" H 8200 4384 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 8200 4950 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4538B.pdf" H 8200 4950 50  0001 C CNN
+	2    8200 4950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7250 4525 7425 4525
-Wire Wire Line
-	7425 4525 7425 4600
-Wire Wire Line
-	8725 4350 8900 4350
-Wire Wire Line
-	8900 4350 8900 4425
-Text GLabel 9575 5475 2    59   Input ~ 0
+Text GLabel 8950 4850 2    59   Input ~ 0
 v_blanking
-Wire Wire Line
-	9575 5475 9500 5475
-NoConn ~ 9500 5175
 $Comp
 L power:+5V #PWR039
-U 1 1 5EF0BEB6
-P 6875 5400
-F 0 "#PWR039" H 6875 5250 50  0001 C CNN
-F 1 "+5V" H 6875 5550 50  0000 C CNN
-F 2 "" H 6875 5400 50  0001 C CNN
-F 3 "" H 6875 5400 50  0001 C CNN
-	1    6875 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR038
 U 1 1 5EF1C3EF
-P 8400 5700
-F 0 "#PWR038" H 8400 5550 50  0001 C CNN
-F 1 "+5V" H 8400 5650 50  0000 C CNN
-F 2 "" H 8400 5700 50  0001 C CNN
-F 3 "" H 8400 5700 50  0001 C CNN
-	1    8400 5700
+P 7500 4850
+F 0 "#PWR039" H 7500 4700 50  0001 C CNN
+F 1 "+5V" H 7500 5000 50  0000 C CNN
+F 2 "" H 7500 4850 50  0001 C CNN
+F 3 "" H 7500 4850 50  0001 C CNN
+	1    7500 4850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8500 5575 8500 5700
-Wire Wire Line
-	8500 5700 8400 5700
-Wire Wire Line
-	8825 1975 8825 1825
-Wire Wire Line
-	8825 1825 9025 1825
-Wire Wire Line
-	9025 2125 9025 3000
-Wire Wire Line
-	8025 5375 8500 5375
-Wire Wire Line
-	8400 5400 8400 5275
-Wire Wire Line
-	8400 5275 8500 5275
-NoConn ~ 7100 4675
-NoConn ~ 8575 4500
-NoConn ~ 7625 1250
-NoConn ~ 9100 1025
-$Comp
-L power:+5V #PWR030
-U 1 1 5EFA3938
-P 2525 3000
-F 0 "#PWR030" H 2525 2850 50  0001 C CNN
-F 1 "+5V" H 2540 3173 50  0000 C CNN
-F 2 "" H 2525 3000 50  0001 C CNN
-F 3 "" H 2525 3000 50  0001 C CNN
-	1    2525 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R24
-U 1 1 5EFA3942
-P 2525 3275
-F 0 "R24" H 2455 3229 50  0000 R CNN
-F 1 "39k" H 2455 3320 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2455 3275 50  0001 C CNN
-F 3 "~" H 2525 3275 50  0001 C CNN
-	1    2525 3275
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C5
-U 1 1 5EFA3956
-P 2625 3475
-F 0 "C5" V 2525 3275 50  0000 R CNN
-F 1 "0.0001u" V 2600 3350 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 2663 3325 50  0001 C CNN
-F 3 "~" H 2625 3475 50  0001 C CNN
-	1    2625 3475
-	0    1    1    0   
-$EndComp
-NoConn ~ 3125 4175
-$Comp
-L power:+5V #PWR035
-U 1 1 5EFA396C
-P 1875 4775
-F 0 "#PWR035" H 1875 4625 50  0001 C CNN
-F 1 "+5V" H 2000 4850 50  0000 C CNN
-F 2 "" H 1875 4775 50  0001 C CNN
-F 3 "" H 1875 4775 50  0001 C CNN
-	1    1875 4775
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R27
-U 1 1 5EFA3977
-P 1875 4925
-F 0 "R27" H 1805 4879 50  0000 R CNN
-F 1 "10k" H 1805 4970 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1805 4925 50  0001 C CNN
-F 3 "~" H 1875 4925 50  0001 C CNN
-	1    1875 4925
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1875 5075 1875 5150
-Connection ~ 1875 5150
-Wire Wire Line
-	1875 5150 2125 5150
-Wire Wire Line
-	3125 3650 3125 3875
-$Comp
-L symbol:74HC4538 U?
-U 1 1 5EFA3988
-P 2625 3975
-AR Path="/5EFA3988" Ref="U?"  Part="1" 
-AR Path="/5EE0E534/5EFA3988" Ref="U5"  Part="1" 
-F 0 "U5" H 2625 3500 50  0000 C CNN
-F 1 "74HC4538" H 2625 3409 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 2625 3975 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4538B.pdf" H 2625 3975 50  0001 C CNN
-	1    2625 3975
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2125 4275 2125 5150
-$Comp
-L power:+5V #PWR031
-U 1 1 5EFB91DE
-P 2050 3925
-F 0 "#PWR031" H 2050 3775 50  0001 C CNN
-F 1 "+5V" H 2065 4098 50  0000 C CNN
-F 2 "" H 2050 3925 50  0001 C CNN
-F 3 "" H 2050 3925 50  0001 C CNN
-	1    2050 3925
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2050 3925 2050 4075
-Wire Wire Line
-	2050 4075 2125 4075
-Wire Wire Line
-	2525 3000 2525 3125
-Text HLabel 3600 3875 2    89   Input ~ 0
+NoConn ~ 6300 4150
+NoConn ~ 7750 4150
+NoConn ~ 6400 1400
+NoConn ~ 7900 1350
+Text HLabel 10000 6300 2    89   Input ~ 0
 burst
-Wire Wire Line
-	3125 3875 3600 3875
-Text GLabel 3225 3650 2    59   Input ~ 0
+Text GLabel 3950 4550 2    59   Input ~ 0
 burst_pulse
-Connection ~ 3125 3875
-Wire Wire Line
-	3125 3650 3225 3650
-Text GLabel 1850 3975 0    59   Input ~ 0
-sync
-Wire Wire Line
-	1850 3975 2125 3975
-Text HLabel 1725 5150 0    89   Input ~ 0
+Text HLabel 1550 5050 0    89   Input ~ 0
 burst_enable
-Wire Wire Line
-	1725 5150 1875 5150
 $Comp
 L symbol:74HC4538 U?
 U 3 1 5EFF3917
 P 1250 6825
 AR Path="/5EFF3917" Ref="U?"  Part="3" 
-AR Path="/5EE0E534/5EFF3917" Ref="U7"  Part="3" 
-F 0 "U7" H 1480 6871 50  0000 L CNN
+AR Path="/5EE0E534/5EFF3917" Ref="U4"  Part="3" 
+F 0 "U4" H 1480 6871 50  0000 L CNN
 F 1 "74HC4538" H 1480 6780 50  0000 L CNN
 F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 1250 6825 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4538B.pdf" H 1250 6825 50  0001 C CNN
@@ -744,10 +305,10 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4538B.pdf" H 1250 6825 
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR041
+L power:+5V #PWR026
 U 1 1 5EFF6827
 P 1250 6325
-F 0 "#PWR041" H 1250 6175 50  0001 C CNN
+F 0 "#PWR026" H 1250 6175 50  0001 C CNN
 F 1 "+5V" H 1265 6498 50  0000 C CNN
 F 2 "" H 1250 6325 50  0001 C CNN
 F 3 "" H 1250 6325 50  0001 C CNN
@@ -755,10 +316,10 @@ F 3 "" H 1250 6325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR044
+L power:GND #PWR027
 U 1 1 5EFF716E
 P 1250 7325
-F 0 "#PWR044" H 1250 7075 50  0001 C CNN
+F 0 "#PWR027" H 1250 7075 50  0001 C CNN
 F 1 "GND" H 1255 7152 50  0000 C CNN
 F 2 "" H 1250 7325 50  0001 C CNN
 F 3 "" H 1250 7325 50  0001 C CNN
@@ -770,8 +331,8 @@ L symbol:74HC4538 U?
 U 3 1 5EFF951F
 P 2150 6825
 AR Path="/5EFF951F" Ref="U?"  Part="3" 
-AR Path="/5EE0E534/5EFF951F" Ref="U8"  Part="3" 
-F 0 "U8" H 2380 6871 50  0000 L CNN
+AR Path="/5EE0E534/5EFF951F" Ref="U5"  Part="3" 
+F 0 "U5" H 2380 6871 50  0000 L CNN
 F 1 "74HC4538" H 2380 6780 50  0000 L CNN
 F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 2150 6825 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4538B.pdf" H 2150 6825 50  0001 C CNN
@@ -779,10 +340,10 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4538B.pdf" H 2150 6825 
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR042
+L power:+5V #PWR030
 U 1 1 5EFF9529
 P 2150 6325
-F 0 "#PWR042" H 2150 6175 50  0001 C CNN
+F 0 "#PWR030" H 2150 6175 50  0001 C CNN
 F 1 "+5V" H 2165 6498 50  0000 C CNN
 F 2 "" H 2150 6325 50  0001 C CNN
 F 3 "" H 2150 6325 50  0001 C CNN
@@ -790,10 +351,10 @@ F 3 "" H 2150 6325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR045
+L power:GND #PWR031
 U 1 1 5EFF9533
 P 2150 7325
-F 0 "#PWR045" H 2150 7075 50  0001 C CNN
+F 0 "#PWR031" H 2150 7075 50  0001 C CNN
 F 1 "GND" H 2155 7152 50  0000 C CNN
 F 2 "" H 2150 7325 50  0001 C CNN
 F 3 "" H 2150 7325 50  0001 C CNN
@@ -801,126 +362,310 @@ F 3 "" H 2150 7325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+L Device:C_Small C11
+U 1 1 5EEDDCC9
+P 6750 4450
+F 0 "C11" V 6650 4250 50  0000 R CNN
+F 1 "x1" V 6800 4250 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 6788 4300 50  0001 C CNN
+F 3 "~" H 6750 4450 50  0001 C CNN
+	1    6750 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5EEDDCBD
+P 6650 4150
+F 0 "R16" H 6580 4104 50  0000 R CNN
+F 1 "y1" H 6580 4195 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6580 4150 50  0001 C CNN
+F 3 "~" H 6650 4150 50  0001 C CNN
+	1    6650 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR035
+U 1 1 5EF0BEB6
+P 6050 4850
+F 0 "#PWR035" H 6050 4700 50  0001 C CNN
+F 1 "+5V" H 6050 5000 50  0000 C CNN
+F 2 "" H 6050 4850 50  0001 C CNN
+F 3 "" H 6050 4850 50  0001 C CNN
+	1    6050 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 5250 6250 5250
+$Comp
+L power:GND #PWR040
+U 1 1 5EEDDCF5
+P 7600 5400
+F 0 "#PWR040" H 7600 5150 50  0001 C CNN
+F 1 "GND" H 7600 5200 50  0000 C CNN
+F 2 "" H 7600 5400 50  0001 C CNN
+F 3 "" H 7600 5400 50  0001 C CNN
+	1    7600 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 4400 8100 4450
+Connection ~ 8100 4450
+Wire Wire Line
+	8100 4100 8100 4000
+Wire Wire Line
+	8100 4000 7900 4000
+Wire Wire Line
+	6450 4000 6650 4000
+Wire Wire Line
+	6650 4300 6650 4450
+Connection ~ 6650 4450
+$Comp
+L Video:LM1881 U6
+U 1 1 61565949
+P 2600 3950
+F 0 "U6" H 2250 4450 50  0000 C CNN
+F 1 "LM1881" H 2350 4350 50  0000 C CNN
+F 2 "" H 2600 3950 50  0001 C CNN
+F 3 "" H 2600 3950 50  0001 C CNN
+	1    2600 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 61570AC5
+P 1850 3850
+F 0 "C9" V 1650 3900 50  0000 R CNN
+F 1 "0.1u" V 1750 3950 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 1888 3700 50  0001 C CNN
+F 3 "~" H 1850 3850 50  0001 C CNN
+	1    1850 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 61575026
+P 1850 4150
+F 0 "R14" V 1950 4200 50  0000 R CNN
+F 1 "680k" V 1850 4250 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1780 4150 50  0001 C CNN
+F 3 "~" H 1850 4150 50  0001 C CNN
+	1    1850 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 6157A6B8
+P 1850 4500
+F 0 "C10" V 1650 4600 50  0000 R CNN
+F 1 "0.1u" V 1750 4600 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 1888 4350 50  0001 C CNN
+F 3 "~" H 1850 4500 50  0001 C CNN
+	1    1850 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 3850 2100 3850
+Wire Wire Line
+	1750 3850 1600 3850
+$Comp
+L power:GND #PWR028
+U 1 1 6157C08B
+P 1550 4600
+F 0 "#PWR028" H 1550 4350 50  0001 C CNN
+F 1 "GND" H 1555 4427 50  0000 C CNN
+F 2 "" H 1550 4600 50  0001 C CNN
+F 3 "" H 1550 4600 50  0001 C CNN
+	1    1550 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4500 2000 4500
+Wire Wire Line
+	2000 4500 2000 4150
+Wire Wire Line
+	2000 4150 2000 3950
+Wire Wire Line
+	2000 3950 2100 3950
+Connection ~ 2000 4150
+Wire Wire Line
+	1700 4150 1550 4150
+Wire Wire Line
+	1550 4150 1550 4500
+Wire Wire Line
+	1750 4500 1550 4500
+Connection ~ 1550 4500
+Wire Wire Line
+	1550 4500 1550 4600
+Wire Wire Line
+	3100 3950 3300 3950
+NoConn ~ 3100 4050
+Wire Wire Line
+	1550 5050 3300 5050
+Wire Wire Line
+	3300 5050 3300 3950
+Connection ~ 3300 3950
+$Comp
+L power:+5V #PWR032
+U 1 1 615A82DC
+P 2600 3550
+F 0 "#PWR032" H 2600 3400 50  0001 C CNN
+F 1 "+5V" H 2615 3723 50  0000 C CNN
+F 2 "" H 2600 3550 50  0001 C CNN
+F 3 "" H 2600 3550 50  0001 C CNN
+	1    2600 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4850 6050 5250
+$Comp
+L power:GND #PWR033
+U 1 1 61605B1C
+P 2600 4250
+F 0 "#PWR033" H 2600 4000 50  0001 C CNN
+F 1 "GND" H 2605 4077 50  0000 C CNN
+F 2 "" H 2600 4250 50  0001 C CNN
+F 3 "" H 2600 4250 50  0001 C CNN
+	1    2600 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR034
+U 1 1 61605EFE
+P 5800 5300
+F 0 "#PWR034" H 5800 5050 50  0001 C CNN
+F 1 "GND" H 5805 5127 50  0000 C CNN
+F 2 "" H 5800 5300 50  0001 C CNN
+F 3 "" H 5800 5300 50  0001 C CNN
+	1    5800 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4950 5800 4950
+Wire Wire Line
+	5800 4950 5800 5300
+Wire Wire Line
+	7700 4950 7600 4950
+Wire Wire Line
+	7600 4950 7600 5400
+Wire Wire Line
+	7700 5250 7500 5250
+Wire Wire Line
+	7500 5250 7500 4850
+Wire Wire Line
+	7250 4850 7350 4850
+Wire Wire Line
+	7350 4850 7350 5050
+Wire Wire Line
+	7350 5050 7700 5050
+NoConn ~ 8700 5150
+Wire Wire Line
+	6550 1250 6750 1250
+Wire Wire Line
+	6750 1250 6750 1350
+Wire Wire Line
+	6750 1650 6750 1700
+Connection ~ 6750 1700
+Wire Wire Line
+	6350 2200 6200 2200
+Wire Wire Line
+	6200 2200 6200 2350
+$Comp
 L symbol:74HC4538 U?
-U 3 1 5EFFD8AE
-P 3050 6825
-AR Path="/5EFFD8AE" Ref="U?"  Part="3" 
-AR Path="/5EE0E534/5EFFD8AE" Ref="U5"  Part="3" 
-F 0 "U5" H 3280 6871 50  0000 L CNN
-F 1 "74HC4538" H 3280 6780 50  0000 L CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 3050 6825 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4538B.pdf" H 3050 6825 50  0001 C CNN
-	3    3050 6825
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR043
-U 1 1 5EFFD8B8
-P 3050 6325
-F 0 "#PWR043" H 3050 6175 50  0001 C CNN
-F 1 "+5V" H 3065 6498 50  0000 C CNN
-F 2 "" H 3050 6325 50  0001 C CNN
-F 3 "" H 3050 6325 50  0001 C CNN
-	1    3050 6325
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR046
-U 1 1 5EFFD8C2
-P 3050 7325
-F 0 "#PWR046" H 3050 7075 50  0001 C CNN
-F 1 "GND" H 3055 7152 50  0000 C CNN
-F 2 "" H 3050 7325 50  0001 C CNN
-F 3 "" H 3050 7325 50  0001 C CNN
-	1    3050 7325
+U 2 1 5EE91B84
+P 8300 2200
+AR Path="/5EE91B84" Ref="U?"  Part="2" 
+AR Path="/5EE0E534/5EE91B84" Ref="U5"  Part="2" 
+F 0 "U5" H 8300 1725 50  0000 C CNN
+F 1 "74HC4538" H 8300 1634 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 8300 2200 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4538B.pdf" H 8300 2200 50  0001 C CNN
+	2    8300 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3650 1425 4100 1425
-Connection ~ 3650 1425
+	8200 1300 8200 1200
 Wire Wire Line
-	3875 1225 4100 1225
+	8200 1200 8050 1200
+NoConn ~ 7350 2400
 Wire Wire Line
-	7425 4975 7425 4900
-Connection ~ 7425 4975
+	7800 2200 7650 2200
 Wire Wire Line
-	8900 4725 8900 4775
-Connection ~ 8900 4775
+	7650 2200 7650 2700
 Wire Wire Line
-	7950 1475 7950 1525
-Connection ~ 7950 1525
+	7350 2100 7550 2100
 Wire Wire Line
-	9425 1250 9425 1325
-Connection ~ 9425 1325
+	7550 2100 7550 2300
 Wire Wire Line
-	2525 3425 2525 3475
-Connection ~ 2525 3475
+	7550 2300 7800 2300
 Wire Wire Line
-	6500 5475 7025 5475
+	8700 4850 8700 2950
 Wire Wire Line
-	7025 5575 6875 5575
+	8700 2950 6350 2950
 Wire Wire Line
-	6875 5575 6875 5400
+	6350 2500 6350 2950
 Wire Wire Line
-	7025 5775 6875 5775
+	8800 2100 9950 2100
 Wire Wire Line
-	6875 5775 6875 5575
-Connection ~ 6875 5575
-Text Notes 9000 4375 0    50   ~ 0
-RV4, RV3 and R25 value depends on ntsc/pal
-$Comp
-L Comparator:LM393 U2
-U 1 1 5F39D3E6
-P 2450 1425
-F 0 "U2" H 2450 1792 50  0000 C CNN
-F 1 "LM393" H 2450 1701 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 2450 1425 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 2450 1425 50  0001 C CNN
-	1    2450 1425
-	1    0    0    -1  
-$EndComp
-$Comp
-L Comparator:LM393 U2
-U 2 1 5F3A498B
-P 4400 1325
-F 0 "U2" H 4400 1692 50  0000 C CNN
-F 1 "LM393" H 4400 1601 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 4400 1325 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 4400 1325 50  0001 C CNN
-	2    4400 1325
-	1    0    0    -1  
-$EndComp
-$Comp
-L Comparator:LM393 U2
-U 3 1 5F3A762C
-P 4150 6850
-F 0 "U2" H 4108 6896 50  0000 L CNN
-F 1 "LM393" H 4108 6805 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 4150 6850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 4150 6850 50  0001 C CNN
-	3    4150 6850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR050
-U 1 1 5F3A8648
-P 4050 6550
-F 0 "#PWR050" H 4050 6400 50  0001 C CNN
-F 1 "+5V" H 4065 6723 50  0000 C CNN
-F 2 "" H 4050 6550 50  0001 C CNN
-F 3 "" H 4050 6550 50  0001 C CNN
-	1    4050 6550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR051
-U 1 1 5F3A8BDA
-P 4050 7150
-F 0 "#PWR051" H 4050 6900 50  0001 C CNN
-F 1 "GND" H 4055 6977 50  0000 C CNN
-F 2 "" H 4050 7150 50  0001 C CNN
-F 3 "" H 4050 7150 50  0001 C CNN
-	1    4050 7150
-	1    0    0    -1  
-$EndComp
+	8950 2300 8800 2300
+Wire Wire Line
+	8800 2300 8800 2100
+Wire Wire Line
+	8700 4850 8950 4850
+Connection ~ 8700 4850
+Text GLabel 3950 4150 2    59   Input ~ 0
+sync
+Wire Wire Line
+	3300 3950 3400 3950
+Wire Wire Line
+	3100 3850 3500 3850
+Wire Wire Line
+	4850 3850 4850 5050
+Wire Wire Line
+	4850 5050 6250 5050
+Wire Wire Line
+	3100 3750 3600 3750
+Wire Wire Line
+	4850 3750 4850 2300
+Wire Wire Line
+	4850 2300 6350 2300
+Wire Wire Line
+	3950 4550 3400 4550
+Wire Wire Line
+	3400 4550 3400 3950
+Wire Wire Line
+	3950 4350 3500 4350
+Wire Wire Line
+	3500 4350 3500 3850
+Connection ~ 3500 3850
+Wire Wire Line
+	3500 3850 4850 3850
+Wire Wire Line
+	3950 4150 3600 4150
+Wire Wire Line
+	3600 4150 3600 3750
+Connection ~ 3600 3750
+Wire Wire Line
+	3600 3750 4850 3750
+Wire Wire Line
+	7800 2500 7500 2500
+Wire Wire Line
+	7500 2500 7500 3050
+Wire Wire Line
+	7500 3050 2100 3050
+Wire Wire Line
+	2100 2900 2100 3050
+Connection ~ 2100 3050
+Wire Wire Line
+	2100 3050 1750 3050
+Wire Wire Line
+	2100 2550 2100 2600
+Wire Wire Line
+	3400 4550 3400 6300
+Wire Wire Line
+	3400 6300 10000 6300
+Connection ~ 3400 4550
+Connection ~ 8800 2100
+Wire Wire Line
+	8200 1700 8200 1600
+Connection ~ 8200 1700
 $EndSCHEMATC
