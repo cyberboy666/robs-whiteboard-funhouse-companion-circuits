@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:two_point_one_colorizer-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -460,197 +459,95 @@ Wire Wire Line
 $Comp
 L Device:Crystal Y1
 U 1 1 5F21E8DA
-P 1450 2025
-F 0 "Y1" H 1450 2293 50  0000 C CNN
-F 1 "Crystal" H 1450 2202 50  0000 C CNN
-F 2 "Crystal:Crystal_HC49-4H_Vertical" H 1450 2025 50  0001 C CNN
-F 3 "~" H 1450 2025 50  0001 C CNN
-	1    1450 2025
+P 1450 2050
+F 0 "Y1" H 1450 2318 50  0000 C CNN
+F 1 "Crystal" H 1450 2227 50  0000 C CNN
+F 2 "Crystal:Crystal_HC49-4H_Vertical" H 1450 2050 50  0001 C CNN
+F 3 "~" H 1450 2050 50  0001 C CNN
+	1    1450 2050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C1
 U 1 1 5F21F042
-P 1175 2675
-F 0 "C1" H 1290 2721 50  0000 L CNN
-F 1 "33p" H 1290 2630 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 1213 2525 50  0001 C CNN
-F 3 "~" H 1175 2675 50  0001 C CNN
-	1    1175 2675
+P 1150 2700
+F 0 "C1" H 1265 2746 50  0000 L CNN
+F 1 "33p" H 1265 2655 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 1188 2550 50  0001 C CNN
+F 3 "~" H 1150 2700 50  0001 C CNN
+	1    1150 2700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C2
 U 1 1 5F21FC06
-P 1775 2675
-F 0 "C2" H 1890 2721 50  0000 L CNN
-F 1 "33p" H 1890 2630 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 1813 2525 50  0001 C CNN
-F 3 "~" H 1775 2675 50  0001 C CNN
-	1    1775 2675
+P 1800 2700
+F 0 "C2" H 1915 2746 50  0000 L CNN
+F 1 "33p" H 1915 2655 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 1838 2550 50  0001 C CNN
+F 3 "~" H 1800 2700 50  0001 C CNN
+	1    1800 2700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 5F220536
-P 1175 2825
-F 0 "#PWR02" H 1175 2575 50  0001 C CNN
-F 1 "GND" H 1180 2652 50  0000 C CNN
-F 2 "" H 1175 2825 50  0001 C CNN
-F 3 "" H 1175 2825 50  0001 C CNN
-	1    1175 2825
+P 1150 2850
+F 0 "#PWR02" H 1150 2600 50  0001 C CNN
+F 1 "GND" H 1155 2677 50  0000 C CNN
+F 2 "" H 1150 2850 50  0001 C CNN
+F 3 "" H 1150 2850 50  0001 C CNN
+	1    1150 2850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR03
 U 1 1 5F220AF3
-P 1775 2825
-F 0 "#PWR03" H 1775 2575 50  0001 C CNN
-F 1 "GND" H 1780 2652 50  0000 C CNN
-F 2 "" H 1775 2825 50  0001 C CNN
-F 3 "" H 1775 2825 50  0001 C CNN
-	1    1775 2825
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74HC14 U1
-U 1 1 5F223809
-P 1475 1575
-F 0 "U1" H 1400 1900 50  0000 C CNN
-F 1 "74HC14" H 1475 1801 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 1475 1575 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 1475 1575 50  0001 C CNN
-	1    1475 1575
+P 1800 2850
+F 0 "#PWR03" H 1800 2600 50  0001 C CNN
+F 1 "GND" H 1805 2677 50  0000 C CNN
+F 2 "" H 1800 2850 50  0001 C CNN
+F 3 "" H 1800 2850 50  0001 C CNN
+	1    1800 2850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R2
 U 1 1 5F22BD58
-P 1775 1825
-F 0 "R2" H 1845 1871 50  0000 L CNN
-F 1 "5.1k" H 1845 1780 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1705 1825 50  0001 C CNN
-F 3 "~" H 1775 1825 50  0001 C CNN
-	1    1775 1825
+P 1800 1850
+F 0 "R2" H 1870 1896 50  0000 L CNN
+F 1 "5.1k" H 1870 1805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1730 1850 50  0001 C CNN
+F 3 "~" H 1800 1850 50  0001 C CNN
+	1    1800 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1775 1975 1775 2025
-Wire Wire Line
-	1600 2025 1775 2025
-Wire Wire Line
-	1775 1675 1775 1575
 $Comp
 L Device:R R1
 U 1 1 5F232712
-P 1475 1125
-F 0 "R1" V 1375 1075 50  0000 C CNN
-F 1 "1m" V 1300 1075 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1405 1125 50  0001 C CNN
-F 3 "~" H 1475 1125 50  0001 C CNN
-	1    1475 1125
+P 1450 1100
+F 0 "R1" V 1350 1050 50  0000 C CNN
+F 1 "1m" V 1275 1050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1380 1100 50  0001 C CNN
+F 3 "~" H 1450 1100 50  0001 C CNN
+	1    1450 1100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1325 1125 1175 1125
-Wire Wire Line
-	1175 1125 1175 1575
-Connection ~ 1175 1575
-Wire Wire Line
-	1625 1125 1775 1125
-Wire Wire Line
-	1775 1125 1775 1575
-Connection ~ 1775 1575
 Connection ~ 2750 4100
 Wire Wire Line
 	2750 4100 2750 5100
-$Comp
-L 74xx:74HC14 U1
-U 2 1 5F248CCE
-P 2225 1575
-F 0 "U1" H 2150 1900 50  0000 C CNN
-F 1 "74HC14" H 2225 1801 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 2225 1575 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 2225 1575 50  0001 C CNN
-	2    2225 1575
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1775 1575 1925 1575
-Wire Wire Line
-	2525 1575 3450 1575
-Wire Wire Line
-	3450 1575 3450 1200
 Wire Wire Line
 	3450 1200 4600 1200
 Wire Wire Line
-	3450 1575 3450 3500
-Wire Wire Line
 	3450 3500 4625 3500
-Connection ~ 3450 1575
-$Comp
-L 74xx:74HC14 U1
-U 3 1 5F2506CF
-P 10000 6200
-F 0 "U1" H 9925 6525 50  0000 C CNN
-F 1 "74HC14" H 10000 6426 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 10000 6200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 10000 6200 50  0001 C CNN
-	3    10000 6200
-	1    0    0    -1  
-$EndComp
 NoConn ~ 9700 6200
 NoConn ~ 10300 6200
-$Comp
-L 74xx:74HC14 U1
-U 4 1 5F255BF1
-P 10000 5625
-F 0 "U1" H 9925 5950 50  0000 C CNN
-F 1 "74HC14" H 10000 5851 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 10000 5625 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 10000 5625 50  0001 C CNN
-	4    10000 5625
-	1    0    0    -1  
-$EndComp
-NoConn ~ 9700 5625
-NoConn ~ 10300 5625
-$Comp
-L 74xx:74HC14 U1
-U 6 1 5F25BAFD
-P 10725 6200
-F 0 "U1" H 10650 6525 50  0000 C CNN
-F 1 "74HC14" H 10725 6426 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 10725 6200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 10725 6200 50  0001 C CNN
-	6    10725 6200
-	1    0    0    -1  
-$EndComp
-NoConn ~ 10425 6200
-NoConn ~ 11025 6200
-$Comp
-L 74xx:74HC14 U1
-U 5 1 5F25BB09
-P 10725 5625
-F 0 "U1" H 10650 5950 50  0000 C CNN
-F 1 "74HC14" H 10725 5851 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 10725 5625 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 10725 5625 50  0001 C CNN
-	5    10725 5625
-	1    0    0    -1  
-$EndComp
-NoConn ~ 10425 5625
-NoConn ~ 11025 5625
-$Comp
-L 74xx:74HC14 U1
-U 7 1 5F25F761
-P 9350 5750
-F 0 "U1" H 9000 6325 50  0000 C CNN
-F 1 "74HC14" H 9075 6250 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 9350 5750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 9350 5750 50  0001 C CNN
-	7    9350 5750
-	1    0    0    -1  
-$EndComp
+NoConn ~ 9700 5400
+NoConn ~ 10300 5400
+NoConn ~ 10450 6200
+NoConn ~ 11050 6200
+NoConn ~ 10450 5400
+NoConn ~ 11050 5400
 $Comp
 L power:+5V #PWR012
 U 1 1 5F264118
@@ -673,7 +570,6 @@ F 3 "" H 9350 6250 50  0001 C CNN
 	1    9350 6250
 	1    0    0    -1  
 $EndComp
-Connection ~ 1775 2025
 $Comp
 L power:+5V #PWR017
 U 1 1 5F18870B
@@ -887,56 +783,33 @@ Connection ~ 5850 7225
 Wire Wire Line
 	5850 7225 6250 7225
 $Comp
-L Connector:Mini-DIN-4 J3
-U 1 1 5F1B49B1
-P 975 5225
-F 0 "J3" H 975 5592 50  0000 C CNN
-F 1 "mini-din4" H 975 5501 50  0000 C CNN
-F 2 "lib_fp:mini-din-4-vertical_KMDVLX-4S-N-1" H 975 5225 50  0001 C CNN
-F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" H 975 5225 50  0001 C CNN
-	1    975  5225
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR014
 U 1 1 5F1B66B9
-P 1325 5525
-F 0 "#PWR014" H 1325 5275 50  0001 C CNN
-F 1 "GND" H 1330 5352 50  0000 C CNN
-F 2 "" H 1325 5525 50  0001 C CNN
-F 3 "" H 1325 5525 50  0001 C CNN
-	1    1325 5525
+P 1300 5550
+F 0 "#PWR014" H 1300 5300 50  0001 C CNN
+F 1 "GND" H 1305 5377 50  0000 C CNN
+F 2 "" H 1300 5550 50  0001 C CNN
+F 3 "" H 1300 5550 50  0001 C CNN
+	1    1300 5550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR013
 U 1 1 5F1B6B98
-P 575 5525
-F 0 "#PWR013" H 575 5275 50  0001 C CNN
-F 1 "GND" H 580 5352 50  0000 C CNN
-F 2 "" H 575 5525 50  0001 C CNN
-F 3 "" H 575 5525 50  0001 C CNN
-	1    575  5525
+P 650 5550
+F 0 "#PWR013" H 650 5300 50  0001 C CNN
+F 1 "GND" H 655 5377 50  0000 C CNN
+F 2 "" H 650 5550 50  0001 C CNN
+F 3 "" H 650 5550 50  0001 C CNN
+	1    650  5550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	575  5525 575  5225
-Wire Wire Line
-	1325 5525 1325 5225
-Wire Wire Line
-	1325 5225 1275 5225
-Wire Wire Line
-	575  5225 675  5225
-Wire Wire Line
-	1275 5125 1275 4750
-Wire Wire Line
-	1275 4750 1050 4750
 Wire Wire Line
 	1050 4750 1050 4100
 Connection ~ 1050 4100
 Wire Wire Line
 	1050 4100 1275 4100
-NoConn ~ 675  5125
+NoConn ~ 1250 5100
 $Comp
 L power:+5V #PWR016
 U 1 1 5F2390E0
@@ -1013,24 +886,6 @@ F 2 "Crystal:Crystal_HC49-4H_Vertical" H 1450 2450 50  0001 C CNN
 F 3 "~" H 1450 2450 50  0001 C CNN
 	1    1450 2450
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1600 2450 1775 2450
-Wire Wire Line
-	1775 2025 1775 2450
-Wire Wire Line
-	1775 2525 1775 2450
-Connection ~ 1775 2450
-$Comp
-L Connector_Generic:Conn_01x03 J6
-U 1 1 60AD2E22
-P 700 2125
-F 0 "J6" H 618 1800 50  0000 C CNN
-F 1 "Conn_01x03" H 618 1891 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 700 2125 50  0001 C CNN
-F 3 "~" H 700 2125 50  0001 C CNN
-	1    700  2125
-	-1   0    0    1   
 $EndComp
 Text Notes 550  2400 0    50   ~ 0
 pal/ntsc
@@ -1134,16 +989,160 @@ Wire Wire Line
 Wire Wire Line
 	3725 6125 3875 6125
 Wire Wire Line
-	1175 1575 1175 2125
-Wire Wire Line
-	1300 2025 900  2025
-Wire Wire Line
 	1300 2450 900  2450
+$Comp
+L 4xxx:4069 U1
+U 1 1 6164B251
+P 1500 1550
+F 0 "U1" H 1500 1867 50  0000 C CNN
+F 1 "4069" H 1500 1776 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 1500 1550 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 1500 1550 50  0001 C CNN
+	1    1500 1550
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	900  2450 900  2225
+	1150 1550 1200 1550
 Wire Wire Line
-	900  2125 1175 2125
-Connection ~ 1175 2125
+	1150 1550 1150 1100
 Wire Wire Line
-	1175 2125 1175 2525
+	1150 1100 1300 1100
+Connection ~ 1150 1550
+Wire Wire Line
+	1800 1550 1900 1550
+Wire Wire Line
+	1800 1550 1800 1100
+Wire Wire Line
+	1800 1100 1600 1100
+Wire Wire Line
+	1600 2450 1800 2450
+Wire Wire Line
+	1800 2450 1800 2050
+Wire Wire Line
+	1800 2550 1800 2450
+Connection ~ 1800 2450
+Wire Wire Line
+	1300 2050 900  2050
+Wire Wire Line
+	1600 2050 1800 2050
+Connection ~ 1800 2050
+Wire Wire Line
+	1800 2050 1800 2000
+Wire Wire Line
+	900  2250 900  2450
+$Comp
+L 4xxx:4069 U1
+U 2 1 616ED5DE
+P 2200 1550
+F 0 "U1" H 2200 1867 50  0000 C CNN
+F 1 "4069" H 2200 1776 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 2200 1550 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 2200 1550 50  0001 C CNN
+	2    2200 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1200 3450 1550
+Wire Wire Line
+	2500 1550 3450 1550
+Connection ~ 3450 1550
+Wire Wire Line
+	3450 1550 3450 3500
+$Comp
+L 4xxx:4069 U1
+U 7 1 616FBC0F
+P 9350 5750
+F 0 "U1" H 9580 5796 50  0000 L CNN
+F 1 "4069" H 9580 5705 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 9350 5750 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 9350 5750 50  0001 C CNN
+	7    9350 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4069 U1
+U 3 1 61712DE7
+P 10000 5400
+F 0 "U1" H 10000 5717 50  0000 C CNN
+F 1 "4069" H 10000 5626 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 10000 5400 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 10000 5400 50  0001 C CNN
+	3    10000 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4069 U1
+U 4 1 6172C924
+P 10750 5400
+F 0 "U1" H 10750 5717 50  0000 C CNN
+F 1 "4069" H 10750 5626 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 10750 5400 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 10750 5400 50  0001 C CNN
+	4    10750 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4069 U1
+U 5 1 6173A957
+P 10000 6200
+F 0 "U1" H 10000 6517 50  0000 C CNN
+F 1 "4069" H 10000 6426 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 10000 6200 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 10000 6200 50  0001 C CNN
+	5    10000 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4069 U1
+U 6 1 6173B242
+P 10750 6200
+F 0 "U1" H 10750 6517 50  0000 C CNN
+F 1 "4069" H 10750 6426 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 10750 6200 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 10750 6200 50  0001 C CNN
+	6    10750 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW3
+U 1 1 617BDAB2
+P 700 2150
+F 0 "SW3" H 700 2435 50  0000 C CNN
+F 1 "SPDT_slide" H 700 2344 50  0000 C CNN
+F 2 "lib_fp:spdt_slide_switch_small_tayda" H 700 2150 50  0001 C CNN
+F 3 "~" H 700 2150 50  0001 C CNN
+	1    700  2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 1550 1150 2550
+Wire Wire Line
+	500  2150 500  2550
+Wire Wire Line
+	500  2550 1150 2550
+Connection ~ 1150 2550
+$Comp
+L Connector:Mini-DIN-4 J3
+U 1 1 5F1B49B1
+P 950 5200
+F 0 "J3" H 950 5567 50  0000 C CNN
+F 1 "mini-din4" H 950 5476 50  0000 C CNN
+F 2 "lib_fp:mini-din-4-vertical_KMDVLX-4S-N-1" H 950 5200 50  0001 C CNN
+F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" H 950 5200 50  0001 C CNN
+	1    950  5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  5100 650  4750
+Wire Wire Line
+	650  4750 1050 4750
+Wire Wire Line
+	650  5200 650  5550
+Wire Wire Line
+	1300 5550 1300 5200
+Wire Wire Line
+	1300 5200 1250 5200
+Connection ~ 1800 1550
+Wire Wire Line
+	1800 1700 1800 1550
 $EndSCHEMATC

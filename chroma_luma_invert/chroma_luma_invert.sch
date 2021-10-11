@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title "Chroma Luma Invert"
 Date ""
 Rev ""
@@ -122,7 +122,7 @@ U 1 1 5EBBB1FA
 P 3400 1650
 F 0 "U1" H 3400 2017 50  0000 C CNN
 F 1 "AD8044" H 3400 1926 50  0000 C CNN
-F 2 "project_parts:DIP+SOIC_14" H 3400 1650 50  0001 C CNN
+F 2 "lib_fp:DIP+SOIC_14" H 3400 1650 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 3400 1650 50  0001 C CNN
 	1    3400 1650
 	1    0    0    -1  
@@ -173,360 +173,124 @@ Wire Wire Line
 	3050 2600 3100 2600
 Wire Wire Line
 	3100 2450 3100 2600
-$Comp
-L Amplifier_Operational:ADA4807-4 U1
-U 3 1 5EBD1190
-P 5600 3475
-F 0 "U1" H 5600 3108 50  0000 C CNN
-F 1 "AD8044" H 5600 3199 50  0000 C CNN
-F 2 "project_parts:DIP+SOIC_14" H 5600 3475 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 5600 3475 50  0001 C CNN
-	3    5600 3475
-	1    0    0    1   
-$EndComp
-Text GLabel 5200 3800 0    50   Input ~ 0
-2.5V
-Wire Wire Line
-	5200 3800 5200 3575
-Wire Wire Line
-	5200 3575 5300 3575
-Wire Wire Line
-	5375 3000 5100 3000
-Wire Wire Line
-	5100 3000 5100 3375
-Wire Wire Line
-	5100 3375 5300 3375
-$Comp
-L Device:R R9
-U 1 1 5EBD11AC
-P 4750 3375
-F 0 "R9" V 4543 3375 50  0000 C CNN
-F 1 "1k" V 4634 3375 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4680 3375 50  0001 C CNN
-F 3 "~" H 4750 3375 50  0001 C CNN
-	1    4750 3375
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4900 3375 5100 3375
-Connection ~ 5100 3375
-$Comp
-L Device:R R10
-U 1 1 5EBD77D7
-P 5100 2850
-F 0 "R10" H 5030 2804 50  0000 R CNN
-F 1 "5.6k" H 5030 2895 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5030 2850 50  0001 C CNN
-F 3 "~" H 5100 2850 50  0001 C CNN
-	1    5100 2850
-	-1   0    0    1   
-$EndComp
-Connection ~ 5100 3000
-$Comp
-L power:+5V #PWR016
-U 1 1 5EBDCBA3
-P 5100 2650
-F 0 "#PWR016" H 5100 2500 50  0001 C CNN
-F 1 "+5V" H 5115 2823 50  0000 C CNN
-F 2 "" H 5100 2650 50  0001 C CNN
-F 3 "" H 5100 2650 50  0001 C CNN
-	1    5100 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5100 2650 5100 2700
 Text Notes 2525 1075 0    79   ~ 0
 clamp/buffer
-Text Notes 4250 2550 0    79   ~ 0
-invert_burst
 $Comp
 L 4xxx:4051 U3
 U 1 1 5EBDE023
-P 8050 1825
-F 0 "U3" H 8200 2775 50  0000 L CNN
-F 1 "CD4051" H 8200 2675 50  0000 L CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 8050 1825 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4051bms-52bms-53bms.pdf" H 8050 1825 50  0001 C CNN
-	1    8050 1825
+P 8050 1800
+F 0 "U3" H 8200 2750 50  0000 L CNN
+F 1 "CD4051" H 8200 2650 50  0000 L CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 8050 1800 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4051bms-52bms-53bms.pdf" H 8050 1800 50  0001 C CNN
+	1    8050 1800
 	1    0    0    -1  
 $EndComp
-Text Notes 4300 1175 0    79   ~ 0
-invert_video
-Connection ~ 5125 1650
-$Comp
-L power:GND #PWR014
-U 1 1 5EBD07DF
-P 4750 1950
-F 0 "#PWR014" H 4750 1700 50  0001 C CNN
-F 1 "GND" H 4755 1777 50  0000 C CNN
-F 2 "" H 4750 1950 50  0001 C CNN
-F 3 "" H 4750 1950 50  0001 C CNN
-	1    4750 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R8
-U 1 1 5EBCFC00
-P 4750 1800
-F 0 "R8" H 4680 1754 50  0000 R CNN
-F 1 "2.2k" H 4680 1845 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4680 1800 50  0001 C CNN
-F 3 "~" H 4750 1800 50  0001 C CNN
-	1    4750 1800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R7
-U 1 1 5EBCF6BA
-P 4400 1650
-F 0 "R7" V 4193 1650 50  0000 C CNN
-F 1 "1k" V 4284 1650 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4330 1650 50  0001 C CNN
-F 3 "~" H 4400 1650 50  0001 C CNN
-	1    4400 1650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5125 1650 5325 1650
-Wire Wire Line
-	5225 1850 5325 1850
-Wire Wire Line
-	5225 2075 5225 1850
-Text GLabel 5225 2075 0    50   Input ~ 0
-2.5V
-$Comp
-L Device:R R11
-U 1 1 5EBCD7C2
-P 5550 1375
-F 0 "R11" V 5475 1375 50  0000 C CNN
-F 1 "1.5k" V 5550 1375 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5480 1375 50  0001 C CNN
-F 3 "~" H 5550 1375 50  0001 C CNN
-	1    5550 1375
-	0    1    1    0   
-$EndComp
-$Comp
-L Amplifier_Operational:ADA4807-4 U1
-U 2 1 5EBC7462
-P 5625 1750
-F 0 "U1" H 5675 1500 50  0000 C CNN
-F 1 "AD8044" H 5675 1575 50  0000 C CNN
-F 2 "project_parts:DIP+SOIC_14" H 5625 1750 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 5625 1750 50  0001 C CNN
-	2    5625 1750
-	1    0    0    1   
-$EndComp
-Wire Notes Line
-	4200 1025 6050 1025
-Wire Notes Line
-	6050 1025 6050 2250
-Wire Notes Line
-	6050 2250 4200 2250
-Wire Notes Line
-	4200 2250 4200 1025
-Wire Notes Line
-	4200 2400 6050 2400
-Wire Notes Line
-	6050 2400 6050 3900
-Wire Notes Line
-	6050 3900 4200 3900
-Wire Notes Line
-	4200 3900 4200 2400
 Wire Wire Line
 	3700 1650 3950 1650
 Connection ~ 3700 1650
-Wire Wire Line
-	3950 1650 3950 3375
-Wire Wire Line
-	3950 3375 4600 3375
 Connection ~ 3950 1650
-Wire Wire Line
-	3950 1650 4250 1650
-Wire Wire Line
-	5925 1750 6150 1750
-Wire Wire Line
-	6150 1750 6150 1325
-Wire Wire Line
-	6150 1325 7550 1325
-Connection ~ 5925 1750
-Wire Wire Line
-	6275 1425 7550 1425
-Connection ~ 5900 3475
-NoConn ~ 7550 1525
-NoConn ~ 7550 1625
-NoConn ~ 7550 1725
-NoConn ~ 7550 1825
-NoConn ~ 7550 1925
+NoConn ~ 7550 1500
+NoConn ~ 7550 1600
+NoConn ~ 7550 1700
+NoConn ~ 7550 1800
+NoConn ~ 7550 1900
 $Comp
 L power:+5V #PWR021
 U 1 1 5EC0D810
-P 8050 925
-F 0 "#PWR021" H 8050 775 50  0001 C CNN
-F 1 "+5V" H 8065 1098 50  0000 C CNN
-F 2 "" H 8050 925 50  0001 C CNN
-F 3 "" H 8050 925 50  0001 C CNN
-	1    8050 925 
+P 8050 900
+F 0 "#PWR021" H 8050 750 50  0001 C CNN
+F 1 "+5V" H 8065 1073 50  0000 C CNN
+F 2 "" H 8050 900 50  0001 C CNN
+F 3 "" H 8050 900 50  0001 C CNN
+	1    8050 900 
 	1    0    0    -1  
 $EndComp
 Text Notes 4275 775  0    79   ~ 0
 original_video
-$Comp
-L power:GND #PWR020
-U 1 1 5EC1216C
-P 7500 2475
-F 0 "#PWR020" H 7500 2225 50  0001 C CNN
-F 1 "GND" H 7505 2302 50  0000 C CNN
-F 2 "" H 7500 2475 50  0001 C CNN
-F 3 "" H 7500 2475 50  0001 C CNN
-	1    7500 2475
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7550 2425 7500 2425
-Wire Wire Line
-	7500 2425 7500 2475
-$Comp
-L power:GND #PWR022
-U 1 1 5EC19ED7
-P 8150 2775
-F 0 "#PWR022" H 8150 2525 50  0001 C CNN
-F 1 "GND" H 8155 2602 50  0000 C CNN
-F 2 "" H 8150 2775 50  0001 C CNN
-F 3 "" H 8150 2775 50  0001 C CNN
-	1    8150 2775
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8150 2725 8150 2775
-Wire Wire Line
-	8050 2725 8050 2775
-Wire Wire Line
-	8050 2775 8150 2775
-Connection ~ 8150 2775
 Text Notes 7675 650  0    79   ~ 0
 switcher
 $Comp
 L Amplifier_Operational:ADA4807-4 U1
 U 4 1 5EC1C2E9
-P 9375 1325
-F 0 "U1" H 9375 1692 50  0000 C CNN
-F 1 "AD8044" H 9375 1601 50  0000 C CNN
-F 2 "project_parts:DIP+SOIC_14" H 9375 1325 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 9375 1325 50  0001 C CNN
-	4    9375 1325
+P 9350 1300
+F 0 "U1" H 9350 1667 50  0000 C CNN
+F 1 "AD8044" H 9350 1576 50  0000 C CNN
+F 2 "lib_fp:DIP+SOIC_14" H 9350 1300 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 9350 1300 50  0001 C CNN
+	4    9350 1300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9075 1225 8550 1225
 $Comp
 L Device:R R12
 U 1 1 5EC24B54
-P 9325 1725
-F 0 "R12" V 9118 1725 50  0000 C CNN
-F 1 "1k" V 9209 1725 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9255 1725 50  0001 C CNN
-F 3 "~" H 9325 1725 50  0001 C CNN
-	1    9325 1725
+P 9300 1700
+F 0 "R12" V 9093 1700 50  0000 C CNN
+F 1 "1k" V 9184 1700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9230 1700 50  0001 C CNN
+F 3 "~" H 9300 1700 50  0001 C CNN
+	1    9300 1700
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9175 1725 8975 1725
-Wire Wire Line
-	8975 1725 8975 1425
-Wire Wire Line
-	8975 1425 9075 1425
 $Comp
 L Device:R R13
 U 1 1 5EC26408
-P 9925 1325
-F 0 "R13" V 9718 1325 50  0000 C CNN
-F 1 "75" V 9809 1325 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9855 1325 50  0001 C CNN
-F 3 "~" H 9925 1325 50  0001 C CNN
-	1    9925 1325
+P 9950 1300
+F 0 "R13" V 9743 1300 50  0000 C CNN
+F 1 "75" V 9834 1300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9880 1300 50  0001 C CNN
+F 3 "~" H 9950 1300 50  0001 C CNN
+	1    9950 1300
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9475 1725 9675 1725
-Wire Wire Line
-	9675 1725 9675 1325
-Wire Wire Line
-	9675 1325 9775 1325
-Connection ~ 9675 1325
 $Comp
 L Connector:Conn_Coaxial J4
 U 1 1 5EC28FE8
-P 10375 1325
-F 0 "J4" H 10475 1300 50  0000 L CNN
-F 1 "rca" H 10475 1209 50  0000 L CNN
-F 2 "lib_fp:tht_vertical_rca" H 10375 1325 50  0001 C CNN
-F 3 " ~" H 10375 1325 50  0001 C CNN
-	1    10375 1325
+P 10450 1300
+F 0 "J4" H 10550 1275 50  0000 L CNN
+F 1 "rca" H 10550 1184 50  0000 L CNN
+F 2 "lib_fp:tht_vertical_rca" H 10450 1300 50  0001 C CNN
+F 3 " ~" H 10450 1300 50  0001 C CNN
+	1    10450 1300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR025
 U 1 1 5EC28FF2
-P 10375 1675
-F 0 "#PWR025" H 10375 1425 50  0001 C CNN
-F 1 "GND" H 10380 1502 50  0000 C CNN
-F 2 "" H 10375 1675 50  0001 C CNN
-F 3 "" H 10375 1675 50  0001 C CNN
-	1    10375 1675
+P 10450 1650
+F 0 "#PWR025" H 10450 1400 50  0001 C CNN
+F 1 "GND" H 10455 1477 50  0000 C CNN
+F 2 "" H 10450 1650 50  0001 C CNN
+F 3 "" H 10450 1650 50  0001 C CNN
+	1    10450 1650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10375 1525 10375 1675
-Wire Wire Line
-	10175 1325 10075 1325
-Connection ~ 4750 1650
-Wire Wire Line
-	4750 1650 5125 1650
-Wire Wire Line
-	4550 1650 4750 1650
 Wire Wire Line
 	3950 1650 3950 900 
 Wire Wire Line
 	3950 900  5925 900 
-Wire Wire Line
-	7550 900  7550 1225
 $Sheet
 S 4200 4450 1900 1350
 U 5EE0E534
 F0 "blanking_and_burst" 50
 F1 "blanking_and_burst.sch" 50
 F2 "original_video" I L 4200 4650 50 
-F3 "burst" O R 6100 5475 50 
+F3 "burst" O R 6100 5450 50 
 F4 "blanking" O R 6100 4750 50 
 F5 "blanking_enable" I L 4200 5300 50 
 F6 "burst_enable" I L 4200 5650 50 
 $EndSheet
-Wire Wire Line
-	6100 4750 6550 4750
-Wire Wire Line
-	6550 4750 6550 2225
-Wire Wire Line
-	6550 2225 7550 2225
-Wire Wire Line
-	6100 5475 6750 5475
-Wire Wire Line
-	6750 5475 6750 2325
-Wire Wire Line
-	6750 2325 7550 2325
 Text Notes 1300 3200 0    79   ~ 0
 power supply
 Wire Wire Line
-	3950 3375 3950 4650
-Wire Wire Line
 	3950 4650 4200 4650
-Connection ~ 3950 3375
 $Comp
 L Switch:SW_SPDT SW1
 U 1 1 5ED4EE83
 P 3450 5400
 F 0 "SW1" H 3325 5650 50  0000 C CNN
 F 1 "SPDT" H 3350 5550 50  0000 C CNN
-F 2 "lib_fp:mini_toggle_switch_tayda" H 3450 5400 50  0001 C CNN
+F 2 "lib_fp:spdt_slide_switch_small_tayda" H 3450 5400 50  0001 C CNN
 F 3 "~" H 3450 5400 50  0001 C CNN
 	1    3450 5400
 	1    0    0    -1  
@@ -537,7 +301,7 @@ U 1 1 5ED5004B
 P 3450 5750
 F 0 "SW2" H 3325 6000 50  0000 C CNN
 F 1 "SPDT" H 3350 5900 50  0000 C CNN
-F 2 "lib_fp:mini_toggle_switch_tayda" H 3450 5750 50  0001 C CNN
+F 2 "lib_fp:spdt_slide_switch_small_tayda" H 3450 5750 50  0001 C CNN
 F 3 "~" H 3450 5750 50  0001 C CNN
 	1    3450 5750
 	1    0    0    -1  
@@ -647,18 +411,6 @@ Wire Wire Line
 Connection ~ 5925 900 
 Wire Wire Line
 	5925 900  7550 900 
-Text GLabel 5875 3800 0    50   Input ~ 0
-invert_burst
-Wire Wire Line
-	5875 3800 5900 3800
-Wire Wire Line
-	5900 3800 5900 3475
-Text GLabel 5825 2150 0    50   Input ~ 0
-invert_video
-Wire Wire Line
-	5825 2150 5925 2150
-Wire Wire Line
-	5925 2150 5925 1750
 Text Notes 9650 3900 0    79   ~ 0
 breakout
 $Comp
@@ -734,19 +486,6 @@ Wire Wire Line
 	1425 3825 1250 3825
 Wire Wire Line
 	1250 3825 1250 3625
-Wire Wire Line
-	5125 1175 5400 1175
-Wire Wire Line
-	5125 1175 5125 1375
-Wire Wire Line
-	5700 1375 5925 1375
-Wire Wire Line
-	5925 1375 5925 1750
-Wire Wire Line
-	5400 1375 5125 1375
-Connection ~ 5125 1375
-Wire Wire Line
-	5125 1375 5125 1650
 $Comp
 L Connector:Barrel_Jack_Switch J1
 U 1 1 5EEC353E
@@ -785,7 +524,7 @@ U 5 1 5EECCE6A
 P 1175 5325
 F 0 "U1" H 1175 5600 50  0000 C CNN
 F 1 "AD8044" H 1250 5525 50  0000 C CNN
-F 2 "project_parts:DIP+SOIC_14" H 1175 5325 50  0001 C CNN
+F 2 "lib_fp:DIP+SOIC_14" H 1175 5325 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4807-1_4807-2_4807-4.pdf" H 1175 5325 50  0001 C CNN
 	5    1175 5325
 	1    0    0    -1  
@@ -818,11 +557,6 @@ Wire Wire Line
 	3650 5650 4200 5650
 NoConn ~ 3650 5500
 NoConn ~ 3650 5850
-Wire Wire Line
-	7550 2125 7500 2125
-Wire Wire Line
-	7500 2125 7500 2425
-Connection ~ 7500 2425
 $Comp
 L power:+5V #PWR010
 U 1 1 5F3A990E
@@ -981,82 +715,107 @@ Wire Wire Line
 Connection ~ 5325 6725
 Wire Wire Line
 	5325 6725 5725 6725
+$Sheet
+S 4200 1350 1900 2600
+U 61AE3835
+F0 "invert_logic" 50
+F1 "invert_logic.sch" 50
+F2 "invert_video_input" I L 4200 2000 50 
+F3 "invert_burst_input" I L 4200 3400 50 
+F4 "invert_burst_output" O R 6100 3400 50 
+F5 "invert_video_output" O R 6100 2000 50 
+$EndSheet
+Wire Wire Line
+	6100 2000 6350 2000
+Wire Wire Line
+	6350 2000 6350 1300
+Wire Wire Line
+	6350 1300 7550 1300
+Wire Wire Line
+	6100 3400 6450 3400
+Wire Wire Line
+	6450 3400 6450 1400
+Wire Wire Line
+	6450 1400 7550 1400
 $Comp
-L Device:R_POT RV2
-U 1 1 605FE70F
-P 5550 1175
-F 0 "RV2" V 5750 1175 50  0000 C CNN
-F 1 "1k_trim" V 5550 1175 50  0000 C CNN
-F 2 "lib_fp:tht_vertical_trimpot_3362" H 5550 1175 50  0001 C CNN
-F 3 "~" H 5550 1175 50  0001 C CNN
-	1    5550 1175
-	0    -1   -1   0   
-$EndComp
-NoConn ~ 5700 1175
-Wire Wire Line
-	5925 1375 5925 1075
-Wire Wire Line
-	5925 1075 5550 1075
-Wire Wire Line
-	5550 1075 5550 1025
-Connection ~ 5925 1375
-$Comp
-L Device:R_POT RV3
-U 1 1 60634D8A
-P 6050 3475
-F 0 "RV3" V 5935 3475 50  0000 C CNN
-F 1 "1k_trim" V 5844 3475 50  0000 C CNN
-F 2 "lib_fp:tht_vertical_trimpot_3362" H 6050 3475 50  0001 C CNN
-F 3 "~" H 6050 3475 50  0001 C CNN
-	1    6050 3475
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6050 3325 6275 3325
-Wire Wire Line
-	6275 3325 6275 1425
-NoConn ~ 6200 3475
-$Comp
-L Device:C C8
-U 1 1 6064606D
-P 6275 3600
-F 0 "C8" H 6390 3646 50  0000 L CNN
-F 1 "0.001u" H 6390 3555 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 6313 3450 50  0001 C CNN
-F 3 "~" H 6275 3600 50  0001 C CNN
-	1    6275 3600
+L power:GND #PWR020
+U 1 1 5EC1216C
+P 7500 2500
+F 0 "#PWR020" H 7500 2250 50  0001 C CNN
+F 1 "GND" H 7505 2327 50  0000 C CNN
+F 2 "" H 7500 2500 50  0001 C CNN
+F 3 "" H 7500 2500 50  0001 C CNN
+	1    7500 2500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6275 3450 6275 3325
-Connection ~ 6275 3325
+	6650 4750 6650 2200
+Wire Wire Line
+	6650 2200 7550 2200
+Wire Wire Line
+	6100 4750 6650 4750
+Wire Wire Line
+	6100 5450 6800 5450
+Wire Wire Line
+	6800 5450 6800 2300
+Wire Wire Line
+	6800 2300 7550 2300
+Wire Wire Line
+	7500 2500 7500 2400
+Wire Wire Line
+	7500 2400 7550 2400
+Wire Wire Line
+	7550 2100 7500 2100
+Wire Wire Line
+	7500 2100 7500 2400
+Connection ~ 7500 2400
+Wire Wire Line
+	7550 1200 7550 900 
 $Comp
-L power:GND #PWR019
-U 1 1 6064B833
-P 6275 3750
-F 0 "#PWR019" H 6275 3500 50  0001 C CNN
-F 1 "GND" H 6280 3577 50  0000 C CNN
-F 2 "" H 6275 3750 50  0001 C CNN
-F 3 "" H 6275 3750 50  0001 C CNN
-	1    6275 3750
+L power:GND #PWR014
+U 1 1 61B4819B
+P 8150 2850
+F 0 "#PWR014" H 8150 2600 50  0001 C CNN
+F 1 "GND" H 8155 2677 50  0000 C CNN
+F 2 "" H 8150 2850 50  0001 C CNN
+F 3 "" H 8150 2850 50  0001 C CNN
+	1    8150 2850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_POT RV1
-U 1 1 6064BF44
-P 5525 3000
-F 0 "RV1" V 5725 3000 50  0000 C CNN
-F 1 "1k_trim" V 5525 3000 50  0000 C CNN
-F 2 "lib_fp:tht_vertical_trimpot_3362" H 5525 3000 50  0001 C CNN
-F 3 "~" H 5525 3000 50  0001 C CNN
-	1    5525 3000
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	5900 2850 5525 2850
+	8150 2700 8150 2850
 Wire Wire Line
-	5900 2850 5900 3475
-NoConn ~ 5675 3000
-Text Notes 5975 4050 0    50   ~ 0
-rc delay filter
+	8050 2700 8150 2700
+Connection ~ 8150 2700
+Wire Wire Line
+	10250 1300 10100 1300
+Wire Wire Line
+	9800 1300 9750 1300
+Wire Wire Line
+	9450 1700 9750 1700
+Wire Wire Line
+	9750 1700 9750 1300
+Connection ~ 9750 1300
+Wire Wire Line
+	9750 1300 9650 1300
+Wire Wire Line
+	9050 1400 9050 1700
+Wire Wire Line
+	9050 1700 9150 1700
+Wire Wire Line
+	9050 1200 8550 1200
+Wire Wire Line
+	10450 1650 10450 1500
+Wire Wire Line
+	3950 1650 3950 2000
+Wire Wire Line
+	4200 2000 3950 2000
+Connection ~ 3950 2000
+Wire Wire Line
+	3950 2000 3950 3400
+Wire Wire Line
+	4200 3400 3950 3400
+Connection ~ 3950 3400
+Wire Wire Line
+	3950 3400 3950 4650
 $EndSCHEMATC

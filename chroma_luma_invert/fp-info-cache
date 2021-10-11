@@ -1,4 +1,4 @@
-9770228418614
+11420090237614
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83053,6 +83053,13 @@ mini_toggle_switch_tayda
 
 0
 3
+3
+lib_fp
+spdt_slide_switch_small_tayda
+
+
+0
+5
 3
 lib_fp
 tht_vertical_rca
