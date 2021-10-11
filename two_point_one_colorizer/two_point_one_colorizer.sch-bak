@@ -996,7 +996,7 @@ U 1 1 6164B251
 P 1500 1550
 F 0 "U1" H 1500 1867 50  0000 C CNN
 F 1 "4069" H 1500 1776 50  0000 C CNN
-F 2 "" H 1500 1550 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 1500 1550 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 1500 1550 50  0001 C CNN
 	1    1500 1550
 	1    0    0    -1  
@@ -1036,7 +1036,7 @@ U 2 1 616ED5DE
 P 2200 1550
 F 0 "U1" H 2200 1867 50  0000 C CNN
 F 1 "4069" H 2200 1776 50  0000 C CNN
-F 2 "" H 2200 1550 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 2200 1550 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 2200 1550 50  0001 C CNN
 	2    2200 1550
 	1    0    0    -1  
@@ -1054,7 +1054,7 @@ U 7 1 616FBC0F
 P 9350 5750
 F 0 "U1" H 9580 5796 50  0000 L CNN
 F 1 "4069" H 9580 5705 50  0000 L CNN
-F 2 "" H 9350 5750 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 9350 5750 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 9350 5750 50  0001 C CNN
 	7    9350 5750
 	1    0    0    -1  
@@ -1065,7 +1065,7 @@ U 3 1 61712DE7
 P 10000 5400
 F 0 "U1" H 10000 5717 50  0000 C CNN
 F 1 "4069" H 10000 5626 50  0000 C CNN
-F 2 "" H 10000 5400 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 10000 5400 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 10000 5400 50  0001 C CNN
 	3    10000 5400
 	1    0    0    -1  
@@ -1076,7 +1076,7 @@ U 4 1 6172C924
 P 10750 5400
 F 0 "U1" H 10750 5717 50  0000 C CNN
 F 1 "4069" H 10750 5626 50  0000 C CNN
-F 2 "" H 10750 5400 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 10750 5400 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 10750 5400 50  0001 C CNN
 	4    10750 5400
 	1    0    0    -1  
@@ -1087,7 +1087,7 @@ U 5 1 6173A957
 P 10000 6200
 F 0 "U1" H 10000 6517 50  0000 C CNN
 F 1 "4069" H 10000 6426 50  0000 C CNN
-F 2 "" H 10000 6200 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 10000 6200 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 10000 6200 50  0001 C CNN
 	5    10000 6200
 	1    0    0    -1  
@@ -1098,7 +1098,7 @@ U 6 1 6173B242
 P 10750 6200
 F 0 "U1" H 10750 6517 50  0000 C CNN
 F 1 "4069" H 10750 6426 50  0000 C CNN
-F 2 "" H 10750 6200 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 10750 6200 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 10750 6200 50  0001 C CNN
 	6    10750 6200
 	1    0    0    -1  
@@ -1109,7 +1109,7 @@ U 1 1 617BDAB2
 P 700 2150
 F 0 "SW3" H 700 2435 50  0000 C CNN
 F 1 "SPDT_slide" H 700 2344 50  0000 C CNN
-F 2 "" H 700 2150 50  0001 C CNN
+F 2 "lib_fp:spdt_slide_switch_small_tayda" H 700 2150 50  0001 C CNN
 F 3 "~" H 700 2150 50  0001 C CNN
 	1    700  2150
 	1    0    0    -1  
