@@ -516,11 +516,6 @@ Wire Wire Line
 	7150 3100 7150 3200
 NoConn ~ 6550 2850
 Wire Wire Line
-	5400 3500 5400 3800
-Wire Wire Line
-	5400 3800 6550 3800
-Connection ~ 5400 3500
-Wire Wire Line
 	7550 3900 9400 3900
 NoConn ~ 7550 3600
 $Comp
@@ -557,7 +552,6 @@ Wire Wire Line
 	6050 3850 6050 3700
 Wire Wire Line
 	6050 3700 6550 3700
-NoConn ~ 5050 2200
 $Comp
 L symbol:74HC4538 U5
 U 3 1 618B7240
@@ -619,4 +613,10 @@ Wire Wire Line
 Wire Wire Line
 	5050 2000 5050 1800
 Connection ~ 5050 2000
+Wire Wire Line
+	5050 2200 5750 2200
+Wire Wire Line
+	5750 2200 5750 3800
+Wire Wire Line
+	5750 3800 6550 3800
 $EndSCHEMATC
