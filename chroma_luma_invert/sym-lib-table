@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name symbol)(type Legacy)(uri ${KIPRJMOD}/lib_sh/symbol.lib)(options "")(descr ""))
-  (lib (name 74hc4538)(type Legacy)(uri ${KIPRJMOD}/lib_sh/74hc4538.lib)(options "")(descr ""))
-)
